@@ -1,0 +1,123 @@
+a{
+    text-decoration: none !important;
+}
+
+.footer-div-1{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0px 0px 150px 150px;
+    position: relative;
+    bottom: -150px;
+    z-index: 3;
+    padding: 0 30px 15px 30px;
+}
+
+.main-footer-container .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.footer-div-1-inner , .footer-div-inner-2{
+    padding-bottom: 50px;
+}
+
+.footer-div-1-inner p{
+    color: #242016;
+    /* font-family: Space Grotesk; */
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+    letter-spacing: -0.8px;
+    margin-bottom: 0 !important;
+}
+
+.footer-div-1 img{
+    width: 100%;
+}
+
+.footer-div-2{
+    height: 250px;
+    width: 100%;
+    background: #0A0A0B;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+.footer-div-inner-2{
+    margin-top: 15px;
+}
+
+.input-p{
+    color: #000;
+    /* font-family: Space Grotesk; */
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-div-inner-2 input{
+    max-width: 580px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 75px;
+    border: 1px solid #2721F2;
+}
+
+.footer-div-inner-2 input:focus-visible{
+    border: 1px solid #2721F2;
+}
+
+.footer-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-input button{
+    display: flex;
+    width: 49px;
+    height: 49px;
+    padding: 10px 10px 10px 14px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 75px;
+    border: 1px solid #2721F2;
+    background: transparent;
+}
+
+.footer-ul-1 ul li{
+    list-style-type: none;
+}
+
+.footer-ul-1 ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.footer-logo-div img{
+    height: 117px;
+}
+
+.adress-info p , .adress-info a , .adress-info span{
+    color: #000;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.adress-info p{
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
