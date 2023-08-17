@@ -10,3 +10,9 @@ header {
     width: 281px;
     height: 84px;
 }
+
+.dark-light-wrap {
+    display: flex;
+    width: 120px;
+    height: 60px;
+}
