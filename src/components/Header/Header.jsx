@@ -4,26 +4,21 @@ import senbay_logo from '../../assets/images/senbay_logo.svg';
 import { FiSun } from 'react-icons/fi';
 import { BsMoon } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { useDispatch, useSelector } from 'react-redux';
+import { modeSliceActions } from '../../store/mode-slice';
 
 const Header = () => {
-    const [isDarkMode,setIsDarkMode] = useState(false);
+    const isDarkMode = useSelector(state => state.modeReducer.mode);
+    const dispatch = useDispatch();
 
     const handleDarkMode = () => {
-        if(isDarkMode){
-            return;
-        }else{
-            setIsDarkMode(true);
-            window.localStorage.setItem('DARK', true);
-        }
+        window.localStorage.setItem('mode', 'dark');
+        dispatch(modeSliceActions.switchDark('dark'));
     };
 
     const handleLightMode = () => {
-        if(!isDarkMode){
-            return;
-        }else{
-            setIsDarkMode(false);
-            window.localStorage.setItem('DARK', false);
-        }
+        window.localStorage.setItem('mode', 'light');
+        dispatch(modeSliceActions.switchDark('light'));
     };
 
     return (
@@ -32,10 +27,10 @@ const Header = () => {
                 <img src={senbay_logo} alt="senbay-logo" />
             </div>
             <div className='dark-light-wrap'>
-                <div onClick={handleLightMode} className={isDarkMode ? 'light-icon' : 'light-icon mode-active'}>
+                <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
                     <FiSun />
                 </div>
-                <div onClick={handleDarkMode} className={isDarkMode ? 'dark-icon mode-active' : 'dark-icon'}>
+                <div onClick={handleDarkMode} className={isDarkMode === 'dark' ? 'dark-icon mode-active' : 'dark-icon'}>
                     <BsMoon />
                 </div>
             </div>
