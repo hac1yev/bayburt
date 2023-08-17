@@ -1,0 +1,12 @@
+header {
+    width: 100%;
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 281px;
+    height: 84px;
+}
