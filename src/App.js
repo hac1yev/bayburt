@@ -3,12 +3,15 @@ import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
+import { useSelector } from 'react-redux';
 
 const App = () => {
-  const mode = window.localStorage.getItem('mode')
+  const mode = useSelector(state => state.modeReducer.mode);
+
+  console.log(mode);
 
   return (
-    <div className=''>
+    <div className={mode === 'dark' ? 'dark' : ''}>
       <Header />
       <Routes>
           <Route path='/' element={<Home />} />
