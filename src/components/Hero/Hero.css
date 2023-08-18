@@ -1,0 +1,33 @@
+.hero-section {
+    width: 100%;
+}
+
+.hero-section h2 {
+    width: 450px;
+    color: #242016;
+    font-family: Space Grotesk;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; 
+    letter-spacing: -1.3px;
+    text-transform: uppercase;
+}
+
+.hero-ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.hero-ul li {
+    color: #928EFF;
+    font-family: Space Grotesk;
+    font-size: 13.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
