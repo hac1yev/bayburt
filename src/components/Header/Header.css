@@ -28,6 +28,10 @@ header {
     background-color: #fff;
 }
 
+.mobile-dark-light {
+    display: none;
+}
+
 .light-icon,
 .dark-icon {
     display: flex;
@@ -194,6 +198,10 @@ header {
 }   
 
 @media screen and (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
     .open-menu-link ul {
         position: fixed;
         top: 0;
@@ -208,4 +216,17 @@ header {
     .open-menu-link ul li a {
         border-left: none;
     }
+
+    .dark-light-wrap {
+        display: none;
+    }
+
+    .mobile-dark-light {
+        display: flex;
+    }
+
+    .open-menu-ul li a {
+        border-left: none!important;
+    }
+
 }

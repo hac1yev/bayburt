@@ -43,6 +43,14 @@ const Header = () => {
             </div>
             <div className='open-menu-link'>
                 {isMenuOpen && <ul className={isDarkMode === 'dark' && 'open-menu-ul'}>
+                <div className='dark-light-wrap mobile-dark-light'>
+                    <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
+                        <FiSun />
+                    </div>
+                    <div onClick={handleDarkMode} className={isDarkMode === 'dark' ? 'dark-icon mode-active' : 'dark-icon'}>
+                        <BsMoon />
+                    </div>
+                </div>
                     <li>
                         <Link to="/">
                             ƏSAS SƏHİFƏ
