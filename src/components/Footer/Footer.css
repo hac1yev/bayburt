@@ -2,24 +2,37 @@ a {
   text-decoration: none !important;
 }
 
-.footer-div-1 {
+.main-footer-cont {
+  background-color: black;
   width: 100%;
-  background-color: #fff;
-  border-radius: 0px 0px 150px 150px;
-  position: relative;
-  bottom: -150px;
-  z-index: 3;
-  padding: 0 30px 15px 30px;
 }
 
-.main-footer-container .row {
+.inner-cont-1 {
+  background-color: white;
+  width: 100%;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.inner-cont-1  .row{
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
-.footer-div-1-inner,
-.footer-div-inner-2 {
-  padding-bottom: 50px;
+.inner-cont-2 {
+  color: #fff;
+  width: 100%;
+}
+
+.footer-div-1 {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0px 0px 150px 150px;
+  padding: 0 30px 15px 30px;
+}
+
+.footer-div-1-inner{
+  padding: 0 15px;
 }
 
 .footer-div-1-inner p {
@@ -39,23 +52,23 @@ a {
 
 .footer-div-2 {
   /* height: 250px; */
-  padding: 150px 0;
+  /* padding: 150px 0; */
   width: 100%;
   background: #0a0a0b;
   color: #fff;
-  position: relative;
-  bottom: 0;
-  z-index: 2;
+}
+
+.footer-div-1-inner-img img {
+  width: 100%;
 }
 
 .footer-div-inner {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 70px 50px 70px;
-  align-items: center;
+  padding: 50px 70px;
 }
 
 .footer-div-inner div {
@@ -65,6 +78,7 @@ a {
 
 .footer-div-inner-2 {
   margin-top: 15px;
+  padding: 50px;
 }
 
 .input-p {
@@ -201,12 +215,6 @@ a {
   line-height: normal;
 }
 
-@media screen and (max-width: 1024px) {
-  .footer-div-inner {
-    padding: 0 70px 25px 70px;
-  }
-}
-
 @media screen and (max-width: 870px) {
   .footer-div-inner {
     flex-wrap: wrap;
@@ -217,10 +225,20 @@ a {
   .footer-div-inner div {
     justify-content: center;
   }
+
+  .footer-logo-div img {
+    width: 100%;
+  }
+
+  .footer-div-1-inner p{
+    font-size: 20px;
+    line-height: initial;
+    text-align: justify;
+  }
 }
 
-@media screen and (max-width: 475px) {
-  .footer-div-2 {
-    height: 55vh;
+@media screen and (max-width: 425px) {
+  .footer-div-inner-2{
+    padding: 10px;
   }
 }
