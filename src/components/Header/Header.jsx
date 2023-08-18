@@ -6,8 +6,11 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { useDispatch, useSelector } from 'react-redux';
 import { modeSliceActions } from '../../store/mode-slice';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Header = () => {
+    const [isMenuOpen,setIsMenuOpen] = useState(false);
+
     const isDarkMode = useSelector(state => state.modeReducer.mode);
     const dispatch = useDispatch();
 
@@ -21,12 +24,16 @@ const Header = () => {
         dispatch(modeSliceActions.switchDark('light'));
     };
 
+    const handleMenuBar = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
+
     return (
-        <header>
+        <header className='container'>
             <div className='header-logo'>
                 <img src={senbay_logo} alt="senbay-logo" />
             </div>
-            <div className='dark-light-wrap'>
+            <div className={isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
                 <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
                     <FiSun />
                 </div>
@@ -35,7 +42,7 @@ const Header = () => {
                 </div>
             </div>
             <div className='open-menu-link'>
-                <ul>
+                {isMenuOpen && <ul className={isDarkMode === 'dark' && 'open-menu-ul'}>
                     <li>
                         <Link to="/">
                             ƏSAS SƏHİFƏ
@@ -76,8 +83,8 @@ const Header = () => {
                             AZ
                         </Link>
                     </li>
-                </ul>
-                <div className='menu-icon'>
+                </ul>}
+                <div className={(isDarkMode === 'light' && isMenuOpen) ? 'menu-icon active-menu-icon' : 'menu-icon'} onClick={handleMenuBar}>
                     <GiHamburgerMenu />
                 </div>
             </div>
