@@ -32,16 +32,16 @@ a {
 }
 
 .footer-div-1-inner{
-  padding: 0 15px;
+  margin-top: 50px!important;
 }
 
 .footer-div-1-inner p {
   color: #242016;
-  /* font-family: Space Grotesk; */
-  font-size: 30px;
+  font-family: Space Grotesk;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 38px;
   letter-spacing: -0.8px;
   margin-bottom: 0 !important;
 }
@@ -83,8 +83,8 @@ a {
 
 .input-p {
   color: #000;
-  /* font-family: Space Grotesk; */
-  font-size: 21px;
+  font-family: Space Grotesk;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -100,8 +100,8 @@ a {
 
 .footer-div-inner-2 input::placeholder {
   color: #000;
-  /* font-family: Space Grotesk; */
-  font-size: 23px;
+  font-family: Space Grotesk;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -137,7 +137,7 @@ a {
 .footer-ul-1 ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -151,7 +151,7 @@ a {
 .adress-info a,
 .adress-info span {
   color: #000;
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -168,13 +168,25 @@ a {
 }
 
 .social-icons-footer div {
-  width: 49px;
-  height: 49px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.social-icons-footer div:hover {
+  background-color: #2721F2;
+
+}
+
+.social-icons-footer div img {
+  width: 20px;
+  height: 20px;
 }
 
 .social-icons-footer div:hover{
@@ -196,8 +208,8 @@ a {
 
 .comp-name-footer span {
   color: #fff;
-  /* font-family: Space Grotesk; */
-  font-size: 21px;
+  font-family: Space Grotesk;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -212,8 +224,8 @@ a {
 .copyright-footer span {
   color: #fff;
   text-align: right;
-  /* font-family: Space Grotesk; */
-  font-size: 21px;
+  font-family: Space Grotesk;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -249,9 +261,15 @@ a {
   }
 
   .footer-div-1-inner p{
-    font-size: 19px;
+    font-size: 18px;
     line-height: initial;
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-ul-1 ul li a {
+    font-size: 16px!important;
   }
 }
 
@@ -271,6 +289,10 @@ a {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
   }
+
+  .footer-div-1-inner{
+    margin-top: 30px!important;
+  } 
   
 }
 
