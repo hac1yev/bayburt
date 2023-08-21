@@ -231,6 +231,7 @@ header {
         width: 100%;
         height: 100vh;
         z-index: 100;
+        border: none;
     }
 
     .open-menu-link ul li {
