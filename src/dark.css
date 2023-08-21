@@ -72,6 +72,33 @@
     border-color: #000;
 }
 
+
+.dark .projects-container > h1{
+    color: #fff;
+}
+
+
+.dark .footer-div-1-inner-img img{
+    filter: invert(1);
+}
+
+
+.dark .footer-input svg{
+    filter: invert(1);
+}
+
+.dark .footer-logo-div img{
+    filter: invert(1);
+}
+
+.dark .social-icons-footer div img{
+    filter: invert(1);
+}
+
+.dark .comp-name-footer img{
+    filter: invert(1);
+}
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
