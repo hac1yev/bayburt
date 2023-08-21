@@ -5,3 +5,79 @@
 .dark .hero-section h2 {
     color: #fff;
 }
+
+.dark .leader-message-first h1 {
+    color: #fff;
+}
+
+.dark .leader-message-inner p {
+    color: #fff;
+}
+
+.dark .leader-message-inner b {
+    color: #fff;
+}
+
+.dark .all-projects ul li a {
+    color: #fff;
+}
+
+.dark .all-projects ul li svg path {
+    stroke: #fff;
+}
+
+.dark .inner-cont-1 {
+    background-color: #000;
+}
+
+.dark .footer-div-1-inner p {
+    color: #fff;
+}
+
+.dark .input-p {
+    color: #fff;
+}
+
+.dark .footer-ul-1 ul li a {
+    color: #fff;
+}
+
+.dark .main-footer-cont {
+    background-color: #F3F1EB;
+}
+
+.dark .adress-info p, 
+.dark .adress-info a, 
+.dark .adress-info span {
+    color: #fff;
+}
+
+.dark .footer-div-2 {
+    background-color: #F3F1EB;
+}
+
+.dark .comp-name-footer span {
+    color: #000;
+}
+
+.dark .copyright-footer span {
+    color: #000;
+}
+
+.dark .copyright-footer svg path {
+    fill: #000;
+}
+
+.dark .social-icons-footer div {
+    border-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .dark .open-menu-link ul {
+        background-color: #0d0d0d!important;
+    }
+
+    .dark .open-menu-link ul li a {
+        color: #fff!important;
+    }
+}

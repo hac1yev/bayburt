@@ -59,6 +59,10 @@ header {
     color: #0D0D0D!important;
 }
 
+.close-icon {
+    display: none;
+}
+
 .light-icon svg,
 .dark-icon svg {
     width: 25px;
@@ -203,6 +207,22 @@ header {
     }
 
     .open-menu-link ul {
+        background-color: #f0f0f0;
+        gap: 5px;
+    }
+
+    .open-menu-link ul li a {
+        color: #000;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .dark-light-wrap {
+        position: static;
+        transform: translate(0);
+    }
+
+    .open-menu-link ul {
         position: fixed;
         top: 0;
         left: 0;
@@ -213,8 +233,26 @@ header {
         z-index: 100;
     }
 
+    .open-menu-link ul li {
+        width: 100%;
+        height: 65px;
+    }
+
+    .close-icon {
+        margin: 15px 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .close-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
     .open-menu-link ul li a {
         border-left: none;
+        width: 100%;
     }
 
     .dark-light-wrap {
@@ -229,4 +267,19 @@ header {
         border-left: none!important;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .open-menu-link ul li a {
+        font-size: 16px;    
+    }
+
+    .open-menu-link ul li {
+        height: 50px;
+    }
+
+    .close-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
