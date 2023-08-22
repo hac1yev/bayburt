@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Activity = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [imgId,setImgId] = useState('');
 
     const dummyData = [
         {
@@ -38,12 +39,14 @@ const Activity = () => {
         },
     ]
 
-    const handleMouseEnter = () => {
+    const handleMouseEnter = (id) => {
         setIsHovered(true);
+        setImgId(id);
     };
 
     const handleMouseLeave = () => {
         setIsHovered(false);
+        
     };
 
     return (
@@ -55,10 +58,10 @@ const Activity = () => {
                     {
                         dummyData.map((item) => 
                             <li
-                            
-                            key={item.id}
-                        >
-                            <Link onMouseEnter={handleMouseEnter}  
+                                id={item.id}
+                                key={item.id}
+                            >
+                            <Link onMouseEnter={handleMouseEnter.bind(null, item.id)}  
                                  to='/'>{item.link}</Link>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
                                 <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -66,7 +69,8 @@ const Activity = () => {
                             {isHovered && (
                                 <div className="image-container">
                                     <img
-                                        src={item.image}
+                                        id='activity_id'
+                                        src={`/${imgId}.png`}
                                         alt="on hover"
                                         onMouseLeave={handleMouseLeave}
                                     />
