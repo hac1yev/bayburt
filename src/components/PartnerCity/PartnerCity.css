@@ -1,0 +1,16 @@
+.partner-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.companies-2b,
+.partner-24 {
+    color: #000;
+    font-family: Staff XX Condensed Test;
+    font-size: 350px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250px;
+    overflow: hidden;
+}
+
