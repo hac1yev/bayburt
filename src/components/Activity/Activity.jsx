@@ -5,6 +5,39 @@ import { Link } from 'react-router-dom';
 const Activity = () => {
     const [isHovered, setIsHovered] = useState(false);
 
+    const dummyData = [
+        {
+            id: 1,
+            image: '/1.png',
+            link: 'MAGİSTRAL YOL , KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ'
+        },
+        {
+            id: 2,
+            image: '/2.png',
+            link: 'METRO LAYİHƏLƏRİ'
+        },
+        {
+            id: 3,
+            image: '/3.png',
+            link: 'HAVA LİMANI LAYİHƏLƏRİ'
+        },
+        {
+            id: 4,
+            image: '/4.png',
+            link: 'DƏMİR YOLU LAYİHƏLƏRİ'
+        },
+        {
+            id: 5,
+            image: '/5.png',
+            link: 'SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ'
+        },
+        {
+            id: 6,
+            image: '/6.png',
+            link: 'ÜST QURULUŞ LAYİHƏLƏRİ'
+        },
+    ]
+
     const handleMouseEnter = () => {
         setIsHovered(true);
     };
@@ -19,55 +52,29 @@ const Activity = () => {
 
                 <div className="all-projects">
                     <ul>
-                        <li
+                    {
+                        dummyData.map((item) => 
+                            <li
                             
-                            id='5'
+                            key={item.id}
                         >
-                            <Link onMouseEnter={handleMouseEnter} 
-                                 to='/'>MAGİSTRAL YOL , KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ</Link>
+                            <Link onMouseEnter={handleMouseEnter}  
+                                 to='/'>{item.link}</Link>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
                                 <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             {isHovered && (
                                 <div className="image-container">
                                     <img
-                                        src="/1.png"
+                                        src={item.image}
                                         alt="on hover"
                                         onMouseLeave={handleMouseLeave}
                                     />
                                 </div>
                             )}
                         </li>
-                        <li>
-                            <Link to='/'>METRO LAYİHƏLƏRİ</Link>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
-                                <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-                        <li>
-                            <Link to='/'>HAVA LİMANI LAYİHƏLƏRİ</Link>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
-                                <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-                        <li>
-                            <Link to='/'>DƏMİR YOLU LAYİHƏLƏRİ</Link>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
-                                <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-                        <li>
-                            <Link to='/'>SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ</Link>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
-                                <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-                        <li>
-                            <Link to='/'>ÜST QURULUŞ LAYİHƏLƏRİ</Link>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
-                                <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
+                        )
+                    }
                     </ul>
                 </div>
             </div>
