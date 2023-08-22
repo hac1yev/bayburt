@@ -82,6 +82,10 @@
     filter: invert(1);
 }
 
+.dark .companies-2b,
+.dark .partner-24 {
+    color: #fff;
+}
 
 .dark .footer-input svg{
     filter: invert(1);
