@@ -1,0 +1,34 @@
+.slider-container {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* gap: 20px; */
+  margin-top: 45px;
+  /* flex-wrap: wrap; */
+}
+
+.slider-first,
+.slider-second {
+  max-height: 425px;
+}
+
+.slick-slide img {
+  max-height: 425px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.middle-video {
+  max-height: 610px;
+}
+
+.middle-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+      .middle-video {
+        margin: 15px 0 !important;
+      }
+}
