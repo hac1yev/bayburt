@@ -93,7 +93,8 @@
   }
 
   .mybtn {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 6px 14px;
   }
 
   .leader-message-inner p {
