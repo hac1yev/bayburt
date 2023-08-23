@@ -13,7 +13,7 @@ const Projects = () => {
                                 <rect x="0.5" y="1" width="17" height="17" stroke="#2721F2"/>
                                 <circle cx="9" cy="9.5" r="3" fill="#2721F2"/>
                             </svg>
-                            <span>CANDID CONVICTION</span>
+                            <span>BUILDING GREATNESS</span>
                         </div>
                         <h2 className='col-md-4 d-flex justify-content-center'>LAYİHƏLƏR</h2>
                         <div className='col-md-4'></div>

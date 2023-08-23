@@ -84,6 +84,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .image-container{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
 
   .leader-message-inner p {
