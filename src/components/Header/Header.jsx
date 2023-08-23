@@ -1,5 +1,6 @@
 import './Header.css';
 import senbay_logo from '../../assets/images/senbay_logo.svg';
+import senbay_logo_dark from '../../assets/images/bayburt_logo_dark.svg';
 import { FiSun } from 'react-icons/fi';
 import { BsMoon } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -37,7 +38,7 @@ const Header = () => {
     return (
         <header className='container'>
             <div className='header-logo'>
-                <img src={senbay_logo} alt="senbay-logo" />
+                <img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" />
             </div>
             <div className={isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
                 <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>

@@ -5,6 +5,7 @@ import DirectorMessage from '../components/DirectorMessage/DirectorMessage'
 import Histoyry from '../components/History/History'
 import PartnerCity from '../components/PartnerCity/PartnerCity'
 import FirstSlider from '../components/firstSlider/FirstSlider'
+import Projects from '../components/Projects/Projects'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Activity />
       <Histoyry />
       <PartnerCity />
+      <Projects />
     </div>
   )
 }

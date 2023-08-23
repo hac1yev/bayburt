@@ -103,6 +103,45 @@
     filter: invert(1);
 }
 
+.dark .under-history span {
+    color: #fff;
+}
+
+.dark .history-under-div p {
+    color: #fff;
+}
+
+.dark .mybtn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark .building-greatness span {
+    color: #fff;
+}
+
+.dark .projects-content {
+    color: #fff;
+}
+
+.dark .building-row h2 {
+    color: #fff;
+}
+
+.dark .project-button {
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark .project-empty-div {
+    border-bottom: 1px solid #fff;
+}
+
+.dark .project-button-div {
+    border-bottom: 1px solid #fff;
+}
+
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
@@ -111,4 +150,13 @@
     .dark .open-menu-link ul li a {
         color: #fff!important;
     }
+
+    .dark .project-empty-div {
+        border-bottom: none;
+    }
+    
+    .dark .project-button-div {
+        border-bottom: none;
+    }
+    
 }
