@@ -14,7 +14,8 @@ const FirstSlider = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    arrows: false
+    arrows: false,
+    rtl: true
   };
 
   const settings2 = {
