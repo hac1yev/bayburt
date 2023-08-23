@@ -12,7 +12,7 @@ header {
 }
 
 .header-logo img {
-    width: 281px;
+    /* width: 281px; */
     height: 84px;
 }
 
@@ -156,7 +156,7 @@ header {
     }
 
     .header-logo img {
-        width: 250px;
+        /* width: 250px; */
         height: 64px;
     }
 
@@ -182,7 +182,7 @@ header {
     }
 
     .header-logo img {
-        width: 220px;
+        /* width: 220px; */
         height: 48px;
     }
 
