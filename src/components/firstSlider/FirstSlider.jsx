@@ -3,6 +3,8 @@ import "./FirstSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import leftSide from './7.png'
+import righSide from './8.png'
 
 const FirstSlider = () => {
   const settings = {
@@ -37,25 +39,25 @@ const FirstSlider = () => {
       <Slider {...settings2}>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={leftSide}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={leftSide}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={leftSide}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={leftSide}
               alt=""
             />
           </div>
@@ -70,25 +72,25 @@ const FirstSlider = () => {
         <Slider {...settings}>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={righSide}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={righSide}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={righSide}
               alt=""
             />
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/11278592/pexels-photo-11278592.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={righSide}
               alt=""
             />
           </div>
