@@ -1,65 +1,100 @@
-// import React from 'react'
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
-// import './FooterSlider.css';
-// import footerSlider1 from '../../assets/images/footerSlider1.svg';
-// import footerSlider2 from '../../assets/images/footerSlider2.svg';
-// import { useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import './FooterSlider.css';
+import { images } from '../../assets/dummyApi/DummyImages';
 
-// const slider = {
-//     dots: false,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 2,
-//     slidesToScroll: 1,
-//     autoplay: false,
-//     autoplaySpeed: 2000,
-//     cssEase: "linear",
-//     arrows: false
-// }
+const FooterSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [autoplay, setAutoplay] = useState(true); // Autoplay state
+  const delay = 3000; // Autoplay delay in milliseconds
 
+  const showPrevSet = useCallback(() => {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    setCurrentIndex(newIndex);
+  }, [currentIndex]);
 
+  const showNextSet = useCallback(() => {
+    const newIndex = (currentIndex + 1) % images.length;
+    setCurrentIndex(newIndex);
+  }, [currentIndex]);
 
-// const FooterSlider = () => {
-//     useEffect(() => {
-//         const slickTrack = document.querySelector('.slick-track');
-//         const slickCurrent = document.querySelector('.slick-current');
-//         const slickActive = document.querySelector('.slick-active');
+  const toggleAutoplay = () => {
+    setAutoplay(!autoplay);
+  };
 
-//         slickCurrent.style.width = `calc(1/${slickTrack.children.length} * 4/12 * 100%)`;
-//         slickCurrent.style.setProperty('width', slickCurrent.style.width, 'important');
-        
-//     }, []);
+  const onKeyUp = useCallback(
+    (e) => {
+      if (e.keyCode) {
+        if (e.keyCode === 39) {
+          showNextSet();
+        } else if (e.keyCode === 37) {
+          showPrevSet();
+        }
+      }
+    },
+    [showNextSet, showPrevSet]
+  );
 
-//   return (
-//     <Slider {...slider} className='footer-slider'>
-//         <div className="slick-image">
-//             <img src={footerSlider1} alt="footerSlider1" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider2} alt="footerSlider2" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider1} alt="footerSlider1" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider2} alt="footerSlider2" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider1} alt="footerSlider1" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider2} alt="footerSlider2" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider1} alt="footerSlider1" />
-//         </div>
-//         <div className="slick-image">
-//             <img src={footerSlider2} alt="footerSlider2" />
-//         </div>
-//     </Slider>
-//   )
-// }
+  useEffect(() => {
+    window.addEventListener('keyup', onKeyUp);
 
-// export default FooterSlider
+    // Autoplay logic
+    let autoplayInterval;
+    if (autoplay) {
+      autoplayInterval = setInterval(() => {
+        showNextSet();
+      }, delay);
+    }
+
+    return () => {
+      window.removeEventListener('keyup', onKeyUp);
+      clearInterval(autoplayInterval); // Clear interval on component unmount
+    };
+  }, [autoplay, onKeyUp, delay, showNextSet]);
+
+  return (
+    <div className="container footer-slider-container">
+      <div className="row footer-slider-row">
+        <div className="col-lg-4 carousel-left-col">
+            <div className="row">
+                <div className="carousel__container col-12" style={{ borderTop: '1px solid #fff' }}>
+                    {images.map((img, index) => (
+                    <img
+                        src={img}
+                        className={`carousel__image${index === currentIndex ? ' active' : ''}`}
+                        key={`img-${index}`}
+                        alt={`${index}`}
+                    />
+                    ))}
+                </div>
+                <div className="carousel__container col-12">
+                    {images.map((img, index) => (
+                    <img
+                        src={img}
+                        className={`carousel__image${index === currentIndex ? ' active' : ''}`}
+                        key={`img-${index}`}
+                        alt={`${index}`}
+                    />
+                    ))}
+                </div>
+            </div>
+        </div>
+        <div className='col-lg-8 carousel-right-col'>
+            <div className="row">
+                <div className="carousel__container carousel-8-container col-12">
+                    {images.map((img, index) => (
+                        <img
+                            src={img}
+                            className={`carousel__image${index === currentIndex ? ' active' : ''}`}
+                            key={`img-${index}`}
+                            alt={`${index}`}
+                        />
+                    ))}
+                </div>    
+            </div>  
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FooterSlider;
