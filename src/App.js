@@ -8,8 +8,6 @@ import { useSelector } from 'react-redux';
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
 
-  console.log(mode);
-
   return (
     <div className={mode === 'dark' ? 'dark' : ''}>
       <Header />
