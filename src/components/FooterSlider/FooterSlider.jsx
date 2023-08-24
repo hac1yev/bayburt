@@ -53,7 +53,7 @@ const FooterSlider = () => {
         <div className="col-lg-4 carousel-left-col">
             <div className="row">
                 <div className="carousel__container col-12" style={{ borderTop: '1px solid #fff' }}>
-                    {images.map((img, index) => (
+                    {images.slice(0, images.length * 1 / 3).map((img, index) => (
                     <img
                         src={img}
                         className={`carousel__image${index === currentIndex ? ' active' : ''}`}
@@ -63,7 +63,7 @@ const FooterSlider = () => {
                     ))}
                 </div>
                 <div className="carousel__container col-12">
-                    {images.map((img, index) => (
+                    {images.slice(images.length * 1 / 3, images.length * 2 / 3).map((img, index) => (
                     <img
                         src={img}
                         className={`carousel__image${index === currentIndex ? ' active' : ''}`}
@@ -77,7 +77,7 @@ const FooterSlider = () => {
         <div className='col-lg-8 carousel-right-col'>
             <div className="row">
                 <div className="carousel__container carousel-8-container col-12">
-                    {images.map((img, index) => (
+                    {images.slice(images.length * 2 / 3, images.length).map((img, index) => (
                         <img
                             src={img}
                             className={`carousel__image${index === currentIndex ? ' active' : ''}`}
