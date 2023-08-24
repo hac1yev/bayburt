@@ -4,7 +4,7 @@ import { images } from '../../assets/dummyApi/DummyImages';
 
 const FooterSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [autoplay, setAutoplay] = useState(true); // Autoplay state
+  const autoplay = true; // Autoplay state
   const delay = 3000; // Autoplay delay in milliseconds
 
   const showPrevSet = useCallback(() => {
@@ -16,10 +16,6 @@ const FooterSlider = () => {
     const newIndex = (currentIndex + 1) % images.length;
     setCurrentIndex(newIndex);
   }, [currentIndex]);
-
-  const toggleAutoplay = () => {
-    setAutoplay(!autoplay);
-  };
 
   const onKeyUp = useCallback(
     (e) => {
