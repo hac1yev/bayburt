@@ -1,4 +1,4 @@
-export const images = [
+export const images1 = [
     require('../../assets/images/footerSlider/2023.03.30_bkm_guzergah_sunum_TGY-logosuz_Moment.jpg'),
     require('../../assets/images/footerSlider/2023.03.30_bkm_guzergah_sunum_TGY-logosuz_Moment2.jpg'),
     require('../../assets/images/footerSlider/[002173].jpg'),
@@ -25,6 +25,10 @@ export const images = [
     require('../../assets/images/footerSlider/BayburtGrup_AntalyaÇevreYolu-2.jpg'),
     require('../../assets/images/footerSlider/BayburtGrup_AntalyaÇevreYolu-3.jpg'),
     require('../../assets/images/footerSlider/BayburtGrupGörsel.jpg'),
+];
+
+
+export const images2 = [
     require('../../assets/images/footerSlider/BAYBURTHAVALİMANI.png'),
     require('../../assets/images/footerSlider/başakşehir kayaşehir metro.jpg'),
     require('../../assets/images/footerSlider/demiryolu.jpg'),
@@ -52,10 +56,9 @@ export const images = [
     require('../../assets/images/footerSlider/IMG_1874.JPG'),
     require('../../assets/images/footerSlider/IMG_5224.JPG'),
     require('../../assets/images/footerSlider/IMG_5265.JPG'),
-    require('../../assets/images/footerSlider/IMG_6909.JPG'),
-    require('../../assets/images/footerSlider/IMG_8148.JPG'),
-    require('../../assets/images/footerSlider/IMG_8207.JPG'),
-    require('../../assets/images/footerSlider/IMG_8211 (2).JPG'),
+];
+
+export const images3 = [
     require('../../assets/images/footerSlider/izmir demiryolu.jpg'),
     require('../../assets/images/footerSlider/K_K08642.JPG'),
     require('../../assets/images/footerSlider/K_K08645.JPG'),
@@ -78,4 +81,8 @@ export const images = [
     require('../../assets/images/footerSlider/çukurova havalimanı.jpg'),
     require('../../assets/images/footerSlider/şemkir.jpg'),
     require('../../assets/images/footerSlider/ŞEMKİR GENCE.jpeg'),
-];
+    require('../../assets/images/footerSlider/IMG_6909.JPG'),
+    require('../../assets/images/footerSlider/IMG_8148.JPG'),
+    require('../../assets/images/footerSlider/IMG_8207.JPG'),
+    require('../../assets/images/footerSlider/IMG_8211 (2).JPG'),
+]
