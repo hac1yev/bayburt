@@ -51,14 +51,14 @@
     letter-spacing: -2.5px;
 }
 
-.project-empty-div {
+/* .project-empty-div {
     border-bottom: 1px solid #000;
-}
+} */
 
-.project-button-div {
+/* .project-button-div {
     padding: 50px 0!important;
     border-bottom: 1px solid #000;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .building-greatness {

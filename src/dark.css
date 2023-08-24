@@ -133,13 +133,13 @@
     border-color: #fff;
 }
 
-.dark .project-empty-div {
+/* .dark .project-empty-div {
     border-bottom: 1px solid #fff;
-}
+} */
 
-.dark .project-button-div {
+/* .dark .project-button-div {
     border-bottom: 1px solid #fff;
-}
+} */
 
 
 @media screen and (max-width: 768px) {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Space+Grotesk:wght@400;700&display=swap');
+
 .partner-wrapper {
     display: flex;
     flex-direction: column;
@@ -6,11 +8,11 @@
 .companies-2b,
 .partner-24 {
     color: #000;
-    font-family: Staff XX Condensed Test;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 350px;
     font-style: normal;
     font-weight: 700;
-    line-height: 250px;
+    line-height: 270px;
     overflow: hidden;
 }
 
