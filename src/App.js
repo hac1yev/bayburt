@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import { useSelector } from 'react-redux';
 import Mission from './components/mission/Mission';
 import Siyaset from './components/companyec/Siyaset';
-import History from './pages/History/History';
+import History from './components/History/History';
+
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -16,9 +17,9 @@ const App = () => {
       <Header />
       <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/history' element={<History />} />
           <Route path='/mission' element={<Mission />} />
           <Route path='/economy' element={<Siyaset />} />
-          <Route path='/history' element={<History />} />
       </Routes>
       <Footer />
     </div>
