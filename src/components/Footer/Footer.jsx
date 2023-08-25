@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import footer1 from "../../assets/images/footer-1.svg";
 import footerLogo from "../../assets/images/footer-logo.svg";
 import linkedin from "../../assets/images/link.svg";
 import twitter from "../../assets/images/twit.svg";
@@ -12,22 +11,6 @@ const Footer = () => {
   return (
     <div className="main-footer-cont">
       <div className="inner-cont-1">
-        <div className="container">
-          <div className="footer-div-1-inner row">
-            <div className="col-md-12 col-lg-5 px-0 d-flex align-items-center justify-content-center">
-              <p>
-                Bayburt Grup, başda tikinti sektoru olmaqla enerji, istehsal və
-                xidmət sektorlarında yanacaq təchizatı, sığorta və broker
-                xidmətləri, istixana becərilməsi, bərpa olunan enerji istehsalı,
-                mədənçilik, heyvandarlıq, qida istehsalı və satışı sahələrində
-                yarım əsrdir ki, uğurla fəaliyyət göstərir.
-              </p>
-            </div>
-            <div className="col-md-12 col-lg-7 px-0 footer-div-1-inner-img">
-              <img src={footer1} className="img-fluid" alt=""  />
-            </div>
-          </div>
-        </div>
         <div className="footer-div-inner-2 row">
           <div className="col-lg-5 col-md-12">
             <p className="input-p">
