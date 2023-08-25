@@ -25,7 +25,7 @@ const Projects = () => {
                     We believe the best advantages are the ones you already have. Build where your talent is. 
                     Build where your customers are. Build where you’re strongest.
                 </p>
-                <div className='row'>
+                <div className='row mt-4'>
                     <div className='col-md-4 project-empty-div'></div>
                     <div className='col-md-8 px-4'>
                         <div className='project-button-div'>
