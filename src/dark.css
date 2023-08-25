@@ -133,13 +133,40 @@
     border-color: #fff;
 }
 
-/* .dark .project-empty-div {
-    border-bottom: 1px solid #fff;
-} */
+.dark .mission-vision img{
+    filter: invert(1);
+}
 
-/* .dark .project-button-div {
-    border-bottom: 1px solid #fff;
-} */
+.dark .mission-vision h1{
+    color: #fff;
+}
+
+.dark .mission-vision p{
+    color: #fff;
+}
+
+.dark .accordion{
+    --bs-accordion-bg: #000 !important;
+}
+
+.dark .accordion-button {
+    color: #fff;
+}
+
+.dark .accordion-button:not(.collapsed)::after{
+    content: url(./assets/images/up.svg) !important;
+    filter: invert(0) !important;
+}
+
+.dark .accordion-button::after{
+    filter: invert(1);
+} 
+
+
+.dark .accordion-body{
+    color: #fff !important;
+}
+
 
 .dark .history-content p {
     color: #f0f0f0;
