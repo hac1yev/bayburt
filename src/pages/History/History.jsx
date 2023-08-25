@@ -6,7 +6,7 @@ import './History.css';
 const History = () => {
   return (
     <div>
-        <Banner />
+        <Banner title={'TARİXÇƏ'} description={'HAQQIMIZDA/TARIXÇƏ'} />
         <div className='container'>
           <div className="row history-row">
             <div className="col-lg-7">
