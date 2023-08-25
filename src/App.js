@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import { useSelector } from 'react-redux';
+import Mission from './components/mission/Mission';
+import Siyaset from './components/companyec/Siyaset';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -13,6 +15,8 @@ const App = () => {
       <Header />
       <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/mission' element={<Mission />} />
+          <Route path='/economy' element={<Siyaset />} />
       </Routes>
       <Footer />
     </div>
