@@ -1,0 +1,23 @@
+.history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.history-content p {
+    margin-bottom: 0!important;
+    color: #000;
+    text-align: justify;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.history-row {
+    margin: 40px 0!important;
+    margin-bottom: 60px!important;
+}
