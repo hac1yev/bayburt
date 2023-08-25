@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import { useSelector } from 'react-redux';
 import Mission from './components/mission/Mission';
 import Siyaset from './components/companyec/Siyaset';
-import History from './components/History/History';
+import History from './pages/History/History';
 
 
 const App = () => {
