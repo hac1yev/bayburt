@@ -60,8 +60,10 @@ const Activity = () => {
                             <li
                                 id={item.id}
                                 key={item.id}
+                                onMouseEnter={handleMouseEnter.bind(null, item.id)}
+                                onMouseLeave={handleMouseLeave}
                             >
-                            <Link onMouseEnter={handleMouseEnter.bind(null, item.id)}   onMouseLeave={handleMouseLeave} 
+                            <Link  
                                  to='/'>{item.link}</Link>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="47" viewBox="0 0 49 51" fill="none">
                                 <path d="M2 49L47 2M47 2V47.12M47 2H3.8" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
