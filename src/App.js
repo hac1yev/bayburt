@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import { useSelector } from 'react-redux';
 import Mission from './components/mission/Mission';
 import Siyaset from './components/companyec/Siyaset';
+import History from './components/History/History';
 
 
 const App = () => {
@@ -16,12 +17,9 @@ const App = () => {
       <Header />
       <Routes>
           <Route path='/' element={<Home />} />
-<<<<<<<<< Temporary merge branch 1
           <Route path='/history' element={<History />} />
-=========
           <Route path='/mission' element={<Mission />} />
           <Route path='/economy' element={<Siyaset />} />
->>>>>>>>> Temporary merge branch 2
       </Routes>
       <Footer />
     </div>
