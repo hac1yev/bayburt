@@ -141,6 +141,9 @@
     border-bottom: 1px solid #fff;
 } */
 
+.dark .history-content p {
+    color: #f0f0f0;
+}
 
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
