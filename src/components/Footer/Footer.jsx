@@ -8,6 +8,9 @@ import butaLogo from "../../assets/images/buta.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleTop = ()=>{
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="main-footer-cont">
       <div className="inner-cont-1">
@@ -41,19 +44,19 @@ const Footer = () => {
           <div className="col-lg-3 col-md-12 footer-ul-1">
             <ul>
               <li>
-                <Link>SAYT XƏRİTƏSİ</Link>
+                <Link onClick={handleTop}>SAYT XƏRİTƏSİ</Link>
               </li>
               <li>
-                <Link>İSTİFADƏ ŞƏRTLƏRİ</Link>
+                <Link onClick={handleTop}>İSTİFADƏ ŞƏRTLƏRİ</Link>
               </li>
               <li>
-                <Link>İNFORMASİYA CƏMİYYƏTİ XİDMƏTLƏRİ</Link>
+                <Link onClick={handleTop}>İNFORMASİYA CƏMİYYƏTİ XİDMƏTLƏRİ</Link>
               </li>
               <li>
-                <Link>ŞİRKƏT SİYASƏTİMİZ</Link>
+                <Link to='/economy' onClick={handleTop}>ŞİRKƏT SİYASƏTİMİZ</Link>
               </li>
               <li>
-                <Link>KARYERA</Link>
+                <Link onClick={handleTop}>KARYERA</Link>
               </li>
             </ul>
           </div>
