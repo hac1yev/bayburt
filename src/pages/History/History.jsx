@@ -43,7 +43,7 @@ const History = () => {
             </div>
             <div className="col-lg-5 d-flex align-items-center justify-content-center">
               <div className='history-image'>
-                <img className='img-fluid' src={history_img} alt="history-image" />
+                <img className='img-fluid' src={history_img} alt="history-pic" />
               </div>
             </div>
           </div>

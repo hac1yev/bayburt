@@ -38,7 +38,7 @@ const Header = () => {
     return (
         <header className='container'>
             <div className='header-logo'>
-                <img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" />
+                <Link to='/'><img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" /></Link>
             </div>
             <div className={isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
                 <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
