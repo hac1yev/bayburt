@@ -111,6 +111,20 @@ header {
     background-color: #B7B7B7!important;
 }
 
+.open-menu-link ul {
+    background: red;
+    position: relative;
+    animation: mymove 0.3s ease;
+}
+      
+@keyframes mymove {
+    0% {top: -8px; opacity: 0.2;}
+    25% {top: 0px; opacity: 0.5;}
+    50% {top: 8px; opacity: 0.8;}
+    100% {top: 0px; opacity: 1;}
+}
+
+
 .open-menu-ul li a {
     color: #212529!important;
 }
@@ -268,6 +282,10 @@ header {
         border-left: none!important;
     }
 
+    @keyframes mymove {
+        0% {top: -100%; opacity: 0;}
+        100% {top: 0px; opacity: 1;}
+    }
 }
 
 @media screen and (max-width: 500px) {
