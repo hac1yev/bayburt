@@ -12,7 +12,7 @@
 
 .accordion-button:not(.collapsed) {
   background: none !important;
-  color: #ffcb7c !important;
+  color: #b7b7b7 !important;
 }
 
 .accordion-button:focus {

@@ -170,6 +170,10 @@
     color: #fff !important;
 }
 
+.dark .carousel-8-container,
+.dark .carousel__container {
+    border-top: 1px solid #fff;
+}
 
 .dark .history-content p {
     color: #f0f0f0;
