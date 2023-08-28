@@ -53,7 +53,7 @@ const Footer = () => {
                 <Link onClick={handleTop}>İNFORMASİYA CƏMİYYƏTİ XİDMƏTLƏRİ</Link>
               </li>
               <li>
-                <Link to='/economy' onClick={handleTop}>ŞİRKƏT SİYASƏTİMİZ</Link>
+                <Link to='/about/politics' onClick={handleTop}>ŞİRKƏT SİYASƏTİMİZ</Link>
               </li>
               <li>
                 <Link onClick={handleTop}>KARYERA</Link>

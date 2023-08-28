@@ -4,9 +4,11 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import { useSelector } from 'react-redux';
-import Siyaset from './pages/Politics/Siyaset';
+
 import History from './pages/History/History';
 import Mission from './pages/Mission/Mission';
+import Siyaset from './pages/Politics/Siyaset';
+
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
