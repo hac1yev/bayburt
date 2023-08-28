@@ -61,7 +61,6 @@ const Header = () => {
                         <BsMoon />
                     </div>
                 </div>
-                
                     <li>
                         <Link to="/">
                             ƏSAS SƏHİFƏ
