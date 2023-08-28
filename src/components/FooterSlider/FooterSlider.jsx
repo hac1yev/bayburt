@@ -55,7 +55,7 @@ const FooterSlider = () => {
       <div className="row footer-slider-row">
         <div className="col-lg-4 carousel-left-col">
             <div className="row">
-                <div className="carousel__container col-12" style={{ borderTop: '1px solid #fff' }}>
+                <div className="carousel__container col-12" style={{ borderTop: '1px solid #000' }}>
                     {images1.map((img, index) => (
                     <img
                         src={img}
