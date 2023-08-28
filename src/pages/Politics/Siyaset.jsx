@@ -1,18 +1,12 @@
 import React from "react";
 import "./Siyaset.css";
-import { useState } from "react";
-import Banner from "../Banner/Banner";
+import Banner from "../../components/Banner/Banner";
 
 const Siyaset = () => {
-  const [title, setTitle] = useState("Şirkət Siyasətimiz");
-
-  const handleTitle = (e) => {
-    setTitle(e.target.innerHTML);
-  };
   return (
     <>
-      <Banner title={title} description={`HAQQIMIZDA / ${title}`} />
-      <div className="container accordion-container">
+      <Banner title={`Şirkət Siyasətimiz`} description={`HAQQIMIZDA / ŞİRKƏT SİYASƏTİMİZ`} />
+      <div className="container-md accordion-container">
         <div className="" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingTwo">
@@ -23,7 +17,6 @@ const Siyaset = () => {
                 data-bs-target="#collapseTwo"
                 aria-expanded="false"
                 aria-controls="collapseTwo"
-                onClick={handleTitle}
               >
                 İNSAN RESURSLARI SİYASƏTİMİZ
               </button>
@@ -64,7 +57,7 @@ const Siyaset = () => {
                 data-bs-target="#collapseThree"
                 aria-expanded="false"
                 aria-controls="collapseThree"
-                onClick={handleTitle}
+                
               >
                 Keyfiyyət sİyasətİmİz
               </button>
@@ -105,7 +98,7 @@ const Siyaset = () => {
                 data-bs-target="#collapse4"
                 aria-expanded="false"
                 aria-controls="collapse4"
-                onClick={handleTitle}
+                
               >
                 Ətraf mühİt sİyasətİmİz
               </button>
@@ -146,7 +139,7 @@ const Siyaset = () => {
                 data-bs-target="#collapse5"
                 aria-expanded="false"
                 aria-controls="collapse5"
-                onClick={handleTitle}
+                
               >
                 İSG sİyasətİmİz
               </button>
@@ -187,7 +180,7 @@ const Siyaset = () => {
                 data-bs-target="#collapse6"
                 aria-expanded="false"
                 aria-controls="collapse6"
-                onClick={handleTitle}
+                
               >
                 İnformasİya təhlükəsizlİyİ sİyasətİmİz
               </button>
@@ -228,7 +221,7 @@ const Siyaset = () => {
                 data-bs-target="#collapse7"
                 aria-expanded="false"
                 aria-controls="collapse7"
-                onClick={handleTitle}
+                
               >
                 KVKK və məxfİlİk sİyasətİmİz
               </button>

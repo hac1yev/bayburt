@@ -3,7 +3,7 @@
 }
 
 .accordion-item {
-  border-bottom: 1px solid #0a0a0b !important;
+  border-bottom: 1px solid #000 !important;
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
@@ -39,12 +39,16 @@
 .accordion-button {
   color: #0a0a0b;
   font-family: "Space Grotesk" !important;
-  font-size: 35px !important;
+  font-size: 24px !important;
   font-style: normal !important;
   font-weight: 500 !important;
   text-transform: uppercase;
   padding: 20px 0 !important;
   border-radius: none !important;
+}
+
+.accordion-collapse {
+  transition: all 0.3s ease!important;
 }
 
 @media screen and (max-width: 426px) {

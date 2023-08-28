@@ -3,13 +3,13 @@ import './Mission.css'
 import mission from '../../assets/images/missiya.svg'
 import viziyon from '../../assets/images/viziyon.svg'
 import deyer from '../../assets/images/deyer.svg'
-import Banner from '../Banner/Banner'
+import Banner from '../../components/Banner/Banner'
 
 const Mission = () => {
   return (
 <>
-<Banner title={'MİSYON VƏ VİZYON'} description={'HAQQIMIZDA / MİSYON VƏ VİZYON'} />
-<div className='container'>
+    <Banner title={'MİSYON VƏ VİZYON'} description={'HAQQIMIZDA / MİSYON VƏ VİZYON'} />
+    <div className='container-md'>
         <div className="row mission-vision">
             <div className="col-lg-3 mission-vision-1">
                 <img src={mission} alt="" />

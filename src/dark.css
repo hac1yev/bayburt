@@ -162,6 +162,9 @@
     filter: invert(1);
 } 
 
+.dark .accordion-item {
+    border-bottom: 1px solid #FDFDFD!important;
+}
 
 .dark .accordion-body{
     color: #fff !important;

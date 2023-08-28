@@ -11,6 +11,11 @@
   width: 100%;
 }
 
+.container-md {
+  max-width: 1200px!important;
+  width: 100%;
+}
+
 body {
   /* background-color: #0A0A0B!important; */
 }
