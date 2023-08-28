@@ -68,7 +68,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/history">
+                        <Link to="/about/history">
                             HAQQIMIZDA
                         </Link>
                     </li>

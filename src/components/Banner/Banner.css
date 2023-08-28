@@ -47,10 +47,12 @@
 @media screen and (max-width: 768px) {
     .banner-container h1 {
         font-size: 58px;
+        text-align: center;
     }
     
     .banner-container p {
         font-size: 18px;
+        text-align: center;
     }
 }
 
