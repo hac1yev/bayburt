@@ -124,26 +124,8 @@ header {
     100% {top: 0px; opacity: 1;}
 }
 
-
-.open-menu-ul li a {
-    color: #212529!important;
-}
-
-.open-menu-link ul li {
-    color: #fff;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.open-menu-link ul li:hover {
-    opacity: 0.8;
-}
-
-.open-menu-link ul li a {
+.open-menu-link ul li a,
+.about-div {
     padding: 0px 15px;
     height: 100%;
     display: flex;
@@ -157,10 +139,51 @@ header {
     font-weight: 400;
     line-height: normal;
     border-left: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.open-menu-ul li a {
+    color: #212529!important;
+}
+
+.open-menu-link ul li {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.open-menu-link ul li a:hover,
+.about-div:hover {
+    background-color: #444;
 }
 
 .open-menu-ul li a {
     border-left: 1px solid #212529!important;
+}
+
+.about-li-wrap {
+    position: relative;
+}
+
+.about-dropdown {
+    height: auto!important;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 43px;
+    border: 1px solid #fff;
+    border-top: 0px;
+    z-index: 1100;
+}
+
+.about-dropdown a {
+    width: 200px!important;
+    height: 45px!important;
+    background-color: #000;
+    border-top: 1px solid #fff
 }
 
 @media screen and (max-width: 1150px) {
@@ -178,7 +201,8 @@ header {
         height: 38px;
     }
 
-    .open-menu-link ul li a {
+    .open-menu-link ul li a,
+    .about-div {
         padding: 0px 10px;
         font-size: 12px;
     }
@@ -204,7 +228,8 @@ header {
         height: 32px;
     }
 
-    .open-menu-link ul li a {
+    .open-menu-link ul li a,
+    .about-div {
         padding: 0px 5px;
         font-size: 11px;
     }
@@ -225,7 +250,8 @@ header {
         gap: 5px;
     }
 
-    .open-menu-link ul li a {
+    .open-menu-link ul li a,
+    .about-div {
         color: #000;
         font-weight: 500;
         font-size: 18px;
@@ -265,7 +291,8 @@ header {
         height: 100%;
     }
 
-    .open-menu-link ul li a {
+    .open-menu-link ul li a,
+    .about-div {
         border-left: none;
         width: 100%;
     }
@@ -289,7 +316,8 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-    .open-menu-link ul li a {
+    .open-menu-link ul li a,
+    .about-div {
         font-size: 16px;    
     }
 
