@@ -9,6 +9,7 @@ import History from './pages/History/History';
 import Mission from './pages/Mission/Mission';
 import Siyaset from './pages/Politics/Siyaset';
 import DirectorsBoard from './pages/DirectorBoards/DirectorsBoard';
+import Projects from './pages/Projects/Projects';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/about/mission' element={<Mission />} />
           <Route path='/about/politics' element={<Siyaset />} />
           <Route path='/about/directors-board' element={<DirectorsBoard />} />
+          <Route path='/projects' element={<Projects />} />
       </Routes>
       <Footer />
     </div>
