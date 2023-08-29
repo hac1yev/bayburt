@@ -8,6 +8,9 @@
     overflow: hidden;
 }
 
+.directors-board-card:hover img {
+    transform: scale(1.05);
+}
 
 .directors-board-card::before {
     content: '';
@@ -39,6 +42,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.3s ease;
 }
 
 .director-name {
@@ -54,6 +58,7 @@
     border-left: 0;
     padding: 6px 0;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .director-duty {
@@ -69,9 +74,21 @@
     border-left: 0;
     padding: 6px 0;
     text-align: center;
+    animation: director_duty 0.3s ease;
+}
+
+@keyframes director_duty {
+    from {bottom: 75px; opacity: 0;}
+    to {bottom: 45px; opacity: 1;}
 }
 
 .director-name p,
 .director-duty p {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .directors-board-card {
+        height: 500px;
+    }
 }

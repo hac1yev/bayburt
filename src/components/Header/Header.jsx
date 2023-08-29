@@ -77,7 +77,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link to="/projects">
                             LAYİHƏLƏR
                         </Link>
                     </li>
