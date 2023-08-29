@@ -212,5 +212,14 @@
     .dark .project-button-div {
         border-bottom: none;
     }
+
+    .dark .open-menu-link ul li a:hover, 
+    .dark .about-div:hover {
+        background-color: transparent!important;
+    }
+
+    .dark .about-dropdown a {
+        background-color: transparent!important;
+    }
     
 }

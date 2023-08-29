@@ -247,7 +247,7 @@ header {
 
     .open-menu-link ul {
         background-color: #f0f0f0;
-        gap: 5px;
+        /* gap: 5px; */
     }
 
     .open-menu-link ul li a,
@@ -255,6 +255,11 @@ header {
         color: #000;
         font-weight: 500;
         font-size: 18px;
+    }
+
+    .open-menu-link ul li a:hover, 
+    .about-div:hover {
+        background-color: transparent!important;
     }
 
     .dark-light-wrap {
@@ -307,6 +312,35 @@ header {
 
     .open-menu-ul li a {
         border-left: none!important;
+    }
+    
+    .about-li-wrap {
+        display: flex;
+        flex-direction: column;
+        height: auto!important;
+        gap: 5px;
+    }
+
+    .about-div {
+        height: 50px!important;
+    }
+    
+    .about-dropdown {
+        height: auto!important;
+        display: flex;
+        position: static;
+        top: 0;
+        border: none;
+        gap: 5px;
+    }
+    
+    .about-dropdown a {
+        width: 100%!important;
+        height: auto!important;
+        background-color: transparent;
+        border-top: none;
+        font-size: 13px!important;
+
     }
 
     @keyframes mymove {
