@@ -71,7 +71,7 @@ const Header = () => {
                     </div>
                 </div>
                     <li>
-                        <Link to="/">
+                        <Link onClick={handleCloseMenu} to="/">
                             ƏSAS SƏHİFƏ
                         </Link>
                     </li>
@@ -81,48 +81,48 @@ const Header = () => {
                         </div>
                         {showDrop && (
                             <li className='about-dropdown'>
-                                <Link to="/about/history">
+                                <Link onClick={handleCloseMenu} to="/about/history">
                                     TARİXÇƏ
                                 </Link>
-                                <Link to="/about/mission">
+                                <Link onClick={handleCloseMenu} to="/about/mission">
                                     MİSSİYA VƏ VİZYON
                                 </Link>
-                                <Link to="/about/directors-board">
+                                <Link onClick={handleCloseMenu} to="/about/directors-board">
                                     İDARƏ HEYƏTİ
                                 </Link>
-                                <Link to="/about/politics">
+                                <Link onClick={handleCloseMenu} to="/about/politics">
                                     ŞİRKƏT SİYASƏTİMİZ
                                 </Link>
                             </li>
                         )}
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link onClick={handleCloseMenu} to="/">
                             FƏALİYYƏT SAHƏLƏRİ
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects">
+                        <Link onClick={handleCloseMenu} to="/projects">
                             LAYİHƏLƏR
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link onClick={handleCloseMenu} to="/">
                             SOSİAL MƏSULİYYƏT
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link onClick={handleCloseMenu} to="/">
                             XƏBƏRLƏR
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link onClick={handleCloseMenu} to="/">
                             ƏLAQƏ
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link onClick={handleCloseMenu} to="/">
                             AZ
                         </Link>
                     </li>
