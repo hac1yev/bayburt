@@ -13,6 +13,7 @@ import close_dark from '../../assets/images/close-dark.png';
 
 const Header = () => {
     const [isMenuOpen,setIsMenuOpen] = useState(false);
+    const [showDrop,setShowDrop] = useState(false);
 
     const isDarkMode = useSelector(state => state.modeReducer.mode);
     const dispatch = useDispatch();
@@ -35,6 +36,14 @@ const Header = () => {
         setIsMenuOpen(false);
     }
 
+    const handleShowDropdown = () => {
+        setShowDrop(true);
+    };
+
+    const handleHideDropdown = () => {
+        setShowDrop(false);
+    };
+    
     return (
         <header className='container'>
             <div className='header-logo'>
@@ -66,10 +75,26 @@ const Header = () => {
                             ƏSAS SƏHİFƏ
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/about/history">
+                    <li className='about-li-wrap' onMouseEnter={handleShowDropdown} onMouseLeave={handleHideDropdown}>
+                        <div className="about-div" to="/about/history">
                             HAQQIMIZDA
-                        </Link>
+                        </div>
+                        {showDrop && (
+                            <li className='about-dropdown'>
+                                <Link to="/about/history">
+                                    TARİXÇƏ
+                                </Link>
+                                <Link to="/about/mission">
+                                    MİSSİYA VƏ VİZYON
+                                </Link>
+                                <Link to="/about/directors-board">
+                                    İDARƏ HEYƏTİ
+                                </Link>
+                                <Link to="/about/politics">
+                                    ŞİRKƏT SİYASƏTİMİZ
+                                </Link>
+                            </li>
+                        )}
                     </li>
                     <li>
                         <Link to="/">

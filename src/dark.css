@@ -30,6 +30,10 @@
     background-color: #000;
 }
 
+.dark .about-div {
+    color: #000;
+}
+
 .dark .footer-div-1-inner p {
     color: #fff;
 }
@@ -85,6 +89,11 @@
 .dark .companies-2b,
 .dark .partner-24 {
     color: #fff;
+}
+
+.dark .open-menu-link ul li a:hover,
+.dark .about-div:hover {
+    background-color: #c7c7c7;
 }
 
 .dark .footer-input svg{
@@ -182,12 +191,17 @@
     color: #f0f0f0;
 }
 
+.dark .about-dropdown a {
+    background-color: #B7B7B7;
+}
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
     }
 
-    .dark .open-menu-link ul li a {
+    .dark .open-menu-link ul li a,
+    .dark .about-div {
         color: #fff!important;
     }
 
