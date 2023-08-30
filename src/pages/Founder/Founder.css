@@ -1,0 +1,16 @@
+.founder-container {
+  margin: 30px auto;
+  max-width: 1290px !important;
+  width: 100% !important;
+}
+
+.founder-container p {
+  color: #0a0a0b;
+  margin-top: 40px;
+  text-align: justify;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
