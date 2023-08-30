@@ -10,6 +10,8 @@ import Mission from './pages/Mission/Mission';
 import Siyaset from './pages/Politics/Siyaset';
 import DirectorsBoard from './pages/DirectorBoards/DirectorsBoard';
 import Projects from './pages/Projects/Projects';
+import Certificat from './pages/Certificate/Certificat';
+import Founder from './pages/Founder/Founder';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -24,6 +26,8 @@ const App = () => {
           <Route path='/about/politics' element={<Siyaset />} />
           <Route path='/about/directors-board' element={<DirectorsBoard />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/about/certificat' element={<Certificat />} />
+          <Route path='/about/founder' element={<Founder />} />
       </Routes>
       <Footer />
     </div>
