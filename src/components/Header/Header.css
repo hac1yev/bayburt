@@ -166,12 +166,14 @@ header {
 
 .about-li-wrap {
     position: relative;
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: flex-start!important;
 }
 
 .about-dropdown {
     height: auto!important;
     display: flex;
-    flex-direction: column;
     position: absolute;
     top: 43px;
     border: 1px solid #fff;
@@ -180,7 +182,7 @@ header {
 }
 
 .about-dropdown a {
-    width: 200px!important;
+    width: 180px!important;
     height: 45px!important;
     background-color: #000;
     border-top: 1px solid #fff
@@ -331,7 +333,17 @@ header {
         position: static;
         top: 0;
         border: none;
+        flex-direction: column;
+    }
+
+    .about-dropdown div {
+        display: flex;
+        flex-direction: column;
         gap: 5px;
+    }
+
+    .about-dropdown div a {
+        color: #444;
     }
     
     .about-dropdown a {
