@@ -81,24 +81,39 @@ const Header = () => {
                         </div>
                         {showDrop && (
                             <li className='about-dropdown'>
-                                <Link onClick={handleCloseMenu} to="/about/history">
-                                    TARİXÇƏ
-                                </Link>
-                                <Link onClick={handleCloseMenu} to="/about/mission">
-                                    MİSSİYA VƏ VİZYON
-                                </Link>
-                                <Link onClick={handleCloseMenu} to="/about/directors-board">
-                                    İDARƏ HEYƏTİ
-                                </Link>
-                                <Link onClick={handleCloseMenu} to="/about/politics">
-                                    ŞİRKƏT SİYASƏTİMİZ
-                                </Link>
-                                <Link onClick={handleCloseMenu} to="/about/politics">
-                                    ÜZVLÜK VƏ SERTİFİKATLAR
-                                </Link>
-                                <Link onClick={handleCloseMenu} to="/about/politics">
-                                    QURUCULARIMIZ
-                                </Link>
+                                <div>
+                                    <Link onClick={handleCloseMenu} to="/about/history">
+                                        TARİXÇƏ
+                                    </Link>
+                                    <Link onClick={handleCloseMenu} to="/about/mission">
+                                        MİSSİYA VƏ VİZYON
+                                    </Link>
+                                    <Link onClick={handleCloseMenu} to="/about/politics">
+                                        ŞİRKƏT SİYASƏTİMİZ
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link onClick={handleCloseMenu} to="/about/directors-board">
+                                        İDARƏ HEYƏTİ
+                                    </Link>
+                                    <Link onClick={handleCloseMenu} to="/">
+                                        RƏHBƏRİN MESAJI
+                                    </Link>
+                                    <Link onClick={handleCloseMenu} to="/">
+                                        QRUP ŞİRKƏTLƏRİ
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link onClick={handleCloseMenu} to="/">
+                                        MÜKAFAT VƏ UĞURLAR
+                                    </Link>
+                                    <Link onClick={handleCloseMenu} to="/about/politics">
+                                        ÜZVLÜK VƏ SERTİFİKATLAR
+                                    </Link>
+                                    <Link onClick={handleCloseMenu} to="/about/politics">
+                                        QURUCULARIMIZ
+                                    </Link>
+                                </div>
                             </li>
                         )}
                     </li>
