@@ -93,6 +93,12 @@ const Header = () => {
                                 <Link onClick={handleCloseMenu} to="/about/politics">
                                     ŞİRKƏT SİYASƏTİMİZ
                                 </Link>
+                                <Link onClick={handleCloseMenu} to="/about/politics">
+                                    ÜZVLÜK VƏ SERTİFİKATLAR
+                                </Link>
+                                <Link onClick={handleCloseMenu} to="/about/politics">
+                                    QURUCULARIMIZ
+                                </Link>
                             </li>
                         )}
                     </li>
