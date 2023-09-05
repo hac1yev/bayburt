@@ -109,15 +109,15 @@ const Projects = () => {
 
     return (
         <div className='container'>
-            <div className="row mb-3">
+            <div className="row my-4">
                 <div className="col-4 text-center">
-                    <span className='project-tab' onClick={handleClick.bind(null, 1)}>TÜM PROJELER</span>
+                    <span className={projectTab === 1 ? 'project-tab active-project-tab' : 'project-tab'} onClick={handleClick.bind(null, 1)}>TÜM PROJELER</span>
                 </div>
                 <div className="col-4 text-center">
-                    <span className='project-tab' onClick={handleClick.bind(null, 2)}>DEVAM EDEN PROJELER</span>
+                    <span className={projectTab === 2 ? 'project-tab active-project-tab' : 'project-tab'} onClick={handleClick.bind(null, 2)}>DEVAM EDEN PROJELER</span>
                 </div>
                 <div className="col-4 text-center">
-                    <span className='project-tab' onClick={handleClick.bind(null, 3)}>TAMAMLANAN PROJELER</span>
+                    <span className={projectTab === 3 ? 'project-tab active-project-tab' : 'project-tab'} onClick={handleClick.bind(null, 3)}>TAMAMLANAN PROJELER</span>
                 </div>
             </div>
             <div className="row">

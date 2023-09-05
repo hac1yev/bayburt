@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-import history_img from '../../assets/images/history-image.svg';
+import history_img from '../../assets/images/history-img.svg';
 import './History.css';
 
 const History = () => {
@@ -41,10 +41,38 @@ const History = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-5 d-flex align-items-center justify-content-center">
-              <div className='history-image'>
-                <img className='img-fluid' src={history_img} alt="history-pic" />
+            <div className="col-lg-5 circle-col">
+              <div id="circle">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="300px"
+                  height="300px"
+                  viewBox="0 0 300 300"
+                  enableBackground="new 0 0 300 300"
+                  xmlSpace="preserve"
+                >
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d=" M 150, 150 m -135, 0 a 135,135 0 0,1 270,0 a 135,135 0 0,1 -270,0 "
+                    />
+                  </defs>
+                  <circle cx="150" cy="100" r="120" fill="none" /> {/* Increased radius to 120 */}
+                  <g>
+                    <text fill="#000">
+                      <textPath xlinkHref="#circlePath">
+                        Mərhum qurucumuz Kıyasi Şentürk, 1973-cü ildə qardaşları ilə birlikdə 'Kıyasi Şentürk və Ortaqları'
+                        adı ilə yeraltı infrastruktur, öhdəlik və inşaat işlərinə başlamışlardır.
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
               </div>
+              <img className='history-img' src={history_img} alt="history-img" />
             </div>
           </div>
         </div>  

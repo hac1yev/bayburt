@@ -203,6 +203,10 @@
     color: #fff;
 }
 
+.dark #circle text {
+    fill: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
