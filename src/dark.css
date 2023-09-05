@@ -195,6 +195,14 @@
     background-color: #B7B7B7;
 }
 
+.dark .project-card-h5 {
+    color: #fff;
+}
+
+.dark .project-tab {
+    color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
