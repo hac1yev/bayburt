@@ -1,0 +1,115 @@
+.form-1 {
+  padding: 36px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.contact-div {
+  justify-content: space-evenly;
+}
+
+.form-inner {
+  margin-left: 10%;
+  width: 100%;
+}
+
+.form-inner label {
+  color: #0a0a0b;
+  font-family: "Inter";
+  font-size: 21.306px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32.221px;
+  margin-bottom: 10px;
+}
+
+.form-inner input::placeholder {
+  color: #909090;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-inner input,
+.form-inner textarea {
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.form-inner textarea {
+  width: 100%;
+}
+
+.contact-div form input[type="submit"] {
+  display: flex;
+  padding: 20.53px 38.47px 20.53px 38.48px;
+  align-items: flex-start;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  border-radius: 14400px;
+  background: #0a0a0b;
+}
+
+.latest-form {
+  border-bottom: none !important;
+}
+
+.form-1 span {
+  color: #909090;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.605px; /* 103.781% */
+}
+
+.contact-div iframe {
+  width: 440px;
+  height: 440px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.contact-div textPath {
+  color: #0a0a0b;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-div h1 {
+  color: #0a0a0b;
+  font-family: "Inter";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 93.972px; /* 146.831% */
+}
+
+.form-inner-div {
+  margin: 0 0 20px 0;
+}
+
+.form-inner-div:nth-child(1) {
+  margin-top: 0;
+}
+
+.form-inner-div span {
+  color: #0a0a0b;
+  font-family: "DM Sans";
+  margin-left: 5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px; /* 120% */
+}

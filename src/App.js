@@ -11,6 +11,7 @@ import DirectorsBoard from './pages/DirectorBoards/DirectorsBoard';
 import Projects from './pages/Projects/Projects';
 import Certificat from './pages/Certificate/Certificat';
 import Founder from './pages/Founder/Founder';
+import Contact from './pages/Contact/Contact';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -27,6 +28,7 @@ const App = () => {
           <Route path='/projects' element={<Projects />} />
           <Route path='/about/certificat' element={<Certificat />} />
           <Route path='/about/founder' element={<Founder />} />
+          <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>
