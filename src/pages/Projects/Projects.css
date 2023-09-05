@@ -7,6 +7,7 @@
 
 .project-card {
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 .project-more {
@@ -31,6 +32,8 @@
     align-items: center;
     justify-content: center;
     z-index: 20;
+    margin-bottom: 0!important;
+    cursor: pointer;
 }
 
 .project-img img {
@@ -40,11 +43,9 @@
     transition: all 0.3s ease;
 }
 
-.project-img:hover img {
-    transform: scale(1.1);
-}
 
-.project-img:hover::before {
+
+.img-before::before {
     content: '';
     position: absolute;
     top: 0;
@@ -53,6 +54,32 @@
     right: 0;
     background: linear-gradient(360deg, rgba(24, 21, 21, 0.50) 0%, rgba(2, 2, 2, 0.70) 100%);
     z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.img-before img {
+    transform: scale(1.1);
+}
+
+.project-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(rgba(24, 21, 21, 0.5), rgba(2, 2, 2, 0.7) 100%);
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-content {
+    display: flex;
 }
 
 .project-card h3 {
@@ -67,7 +94,7 @@
     height: 80px;
 }
 
-.project-card p {
+.project-card-p {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -81,15 +108,10 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    display: none;
     z-index: 100;
 }
 
-.project-card:hover p {
-    display: block;
-}
-
-.project-card h5 {
+.project-card-h5 {
     color: #000;
     -leading-trim: both;
     -text-edge: cap;
@@ -97,9 +119,85 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 125% */
+    line-height: 24px; 
     text-align: center;
     height: 45px;
+}
+
+.project-content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;    
+    animation: projectCardP 0.2s ease;
+}
+
+@keyframes projectCardP {
+    from {top: -3%;}
+    to {top: 0;}
+}
+
+.project-content p {
+    color: #FDFDFD;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.project-content span {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.project-more-button {
+    width: 116px;
+    height: 48px;
+    color: #020202;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 7px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-tab {
+    color: #0A0A0B;
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-tab:hover {
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 468px) {

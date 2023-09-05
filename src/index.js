@@ -10,6 +10,10 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init();
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
