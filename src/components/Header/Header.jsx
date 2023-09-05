@@ -107,10 +107,10 @@ const Header = () => {
                                     <Link onClick={handleCloseMenu} to="/">
                                         MÜKAFAT VƏ UĞURLAR
                                     </Link>
-                                    <Link onClick={handleCloseMenu} to="/about/politics">
+                                    <Link onClick={handleCloseMenu} to="/about/certificat">
                                         ÜZVLÜK VƏ SERTİFİKATLAR
                                     </Link>
-                                    <Link onClick={handleCloseMenu} to="/about/politics">
+                                    <Link onClick={handleCloseMenu} to="/about/founder">
                                         QURUCULARIMIZ
                                     </Link>
                                 </div>
