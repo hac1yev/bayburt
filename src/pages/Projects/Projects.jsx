@@ -53,14 +53,14 @@ const allProjects = [
 
 const continuedProjects = [
     {
-        id: 'p1',
+        id: 'l1',
         footerHead: 'MAGİSTRAL YOL, KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ',
         footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
         img: project1,
         desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
     },
     {
-        id: 'p2',
+        id: 'l2',
         footerHead: 'DƏMİRYOLU LAYİHƏLƏRİ',
         footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
         img: project2,
@@ -71,28 +71,28 @@ const continuedProjects = [
 
 const completedProjects = [
     {
-        id: 'p3',
+        id: 'a3',
         footerHead: 'METRO LAYİHƏLƏRİ',
         footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
         img: project3,
         desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
     },
     {
-        id: 'p4',
+        id: 'a4',
         footerHead: 'SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ',
         footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
         img: project1,
         desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
     },
     {
-        id: 'p5',
+        id: 'a5',
         footerHead: 'HAVA LİMANI LAYİHƏLƏRİ',
         footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
         img: project2,
         desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
     },
     {
-        id: 'p6',
+        id: 'a6',
         footerHead: 'ÜST QURULUŞ LAYİHƏLƏRİ',
         footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
         img: project3,
@@ -101,11 +101,21 @@ const completedProjects = [
 ];
 
 const Projects = () => {
+    const [showId,setShowId] = useState(null);
+    const [showDetailId,setShowDetailId] = useState(null);
     const [projectTab,setProjectTab] = useState(1);
     
     const handleClick = (param) => {
         setProjectTab(param)
     }
+
+    const handleChange = (id) => {
+        setShowId(id);
+    }
+
+    const handleShowDetail = (id) => {
+        setShowDetailId(id);
+    };
 
     return (
         <div className='container'>
@@ -128,11 +138,11 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <div className="px-0 project-card">
+                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
-                            <div className='project-content'>
+                            {showDetailId === item.id && (showId === item.id) && <div className='project-content'>
                                 <p>{item.footerText}</p>
                                 <span>
                                     {item.desc}
@@ -141,8 +151,12 @@ const Projects = () => {
                                     <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
-                            </div>
+                            </div>}
+                            {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
+                                Ətraflı
+                            </div>}
                         </div>
+                        {showId === item.id && !(showDetailId === item.id)  && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>Construction Works of Trabzon – Askale Bridge and Tunnel</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
                 ))}
@@ -153,11 +167,11 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <div className="px-0 project-card">
+                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
-                            <div className='project-content'>
+                            {showDetailId === item.id && (showId === item.id) && <div className='project-content'>
                                 <p>{item.footerText}</p>
                                 <span>
                                     {item.desc}
@@ -166,8 +180,12 @@ const Projects = () => {
                                     <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
-                            </div>
+                            </div>}
+                            {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
+                                Ətraflı
+                            </div>}
                         </div>
+                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>Construction Works of Trabzon – Askale Bridge and Tunnel</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
                 ))}
@@ -178,11 +196,11 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"  
                     >
-                        <div className="px-0 project-card">
+                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
-                            <div className='project-content'>
+                            {showDetailId === item.id && (showId === item.id) && <div className='project-content'>
                                 <p>{item.footerText}</p>
                                 <span>
                                     {item.desc}
@@ -191,8 +209,12 @@ const Projects = () => {
                                     <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
-                            </div>
+                            </div>}
+                            {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
+                                Ətraflı
+                            </div>}
                         </div>
+                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>Construction Works of Trabzon – Askale Bridge and Tunnel</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
                 ))}
