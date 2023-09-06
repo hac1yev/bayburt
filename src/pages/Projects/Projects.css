@@ -43,26 +43,7 @@
     transition: all 0.3s ease;
 }
 
-
-
-.img-before::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(360deg, rgba(24, 21, 21, 0.50) 0%, rgba(2, 2, 2, 0.70) 100%);
-    z-index: 10;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.img-before img {
-    transform: scale(1.1);
-}
-
-.project-card:hover::before {
+.project-card-before:before {
     content: '';
     position: absolute;
     top: 0;
@@ -74,12 +55,37 @@
     transition: all 0.3s ease-in-out;
 }
 
-.project-card:hover img {
+/* .img-before::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(360deg, rgba(24, 21, 21, 0.50) 0%, rgba(2, 2, 2, 0.70) 100%);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+} */
+
+
+.img-before img {
     transform: scale(1.1);
 }
 
-.project-card:hover .project-content {
-    display: flex;
+/* .project-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(rgba(24, 21, 21, 0.5), rgba(2, 2, 2, 0.7) 100%);
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+} */
+
+.project-card:hover img {
+    transform: scale(1.1);
 }
 
 .project-card h3 {
@@ -103,12 +109,14 @@
     color: #FDFDFD;
     text-align: center;
     font-family: Space Grotesk;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
+    cursor: pointer;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
     z-index: 100;
+    animation: projectCardP 0.2s ease;
 }
 
 .project-card-h5 {
@@ -134,16 +142,27 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-    display: none;    
-    animation: projectCardP 0.2s ease;
+    display: flex;    
+    animation: detailP 0.2s ease;
 }
 
+/* .project-card:hover .project-content {
+    display: flex;
+} */
+
 @keyframes projectCardP {
+    from {top: 47%;}
+    to {top: 50%;}
+}
+
+@keyframes detailP {
     from {top: -3%;}
     to {top: 0;}
 }
 
+
 .project-content p {
+    /* position: absolute; */
     color: #FDFDFD;
     text-align: center;
     font-family: Space Grotesk;
