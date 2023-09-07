@@ -72,8 +72,8 @@
 }
 
 .contact-div iframe {
-  width: 440px;
-  height: 440px;
+  /* width: 440px;
+  height: 440px; */
   position: absolute;
   border-radius: 50%;
 }
@@ -90,7 +90,7 @@
 .contact-div h1 {
   color: #0a0a0b;
   font-family: "Inter";
-  font-size: 45px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 900;
   line-height: 93.972px; /* 146.831% */
@@ -112,4 +112,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 19.2px; /* 120% */
+}
+
+
+@media screen and (max-width: 400px) {
+  .contact-div h1{
+    font-size: 25px;
+  }
 }

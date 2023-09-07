@@ -207,6 +207,22 @@
     fill: #fff;
 }
 
+.dark .uzv-name p{
+    color: #fff;
+}
+
+.dark .uzvluk-slider{
+    background-color: #fff;
+}
+
+
+.dark .founder-container p{
+    color: #fff;
+}
+
+.dark .founder-image p{
+    color: #FFF;
+}
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
