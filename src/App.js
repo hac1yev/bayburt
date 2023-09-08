@@ -12,6 +12,7 @@ import Projects from './pages/Projects/Projects';
 import Certificat from './pages/Certificate/Certificat';
 import Founder from './pages/Founder/Founder';
 import Contact from './pages/Contact/Contact';
+import Activity from './pages/Activity/Activity';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -29,6 +30,7 @@ const App = () => {
           <Route path='/about/certificat' element={<Certificat />} />
           <Route path='/about/founder' element={<Founder />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/activity' element={<Activity />} />
       </Routes>
       <Footer />
     </div>
