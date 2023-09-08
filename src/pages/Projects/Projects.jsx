@@ -1,104 +1,10 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import project1 from '../../assets/images/projects/project1.svg';
-import project2 from '../../assets/images/projects/project2.svg';
-import project3 from '../../assets/images/projects/project3.svg';
 import more_icon from '../../assets/images/more-icon.svg';
 import { Link } from 'react-router-dom';
-
-const allProjects = [
-    {
-        id: 'p1',
-        footerHead: 'MAGİSTRAL YOL, KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project1,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'p2',
-        footerHead: 'DƏMİRYOLU LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project2,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'p3',
-        footerHead: 'METRO LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project3,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'p4',
-        footerHead: 'SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project1,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'p5',
-        footerHead: 'HAVA LİMANI LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project2,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'p6',
-        footerHead: 'ÜST QURULUŞ LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project3,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-];
-
-const continuedProjects = [
-    {
-        id: 'l1',
-        footerHead: 'MAGİSTRAL YOL, KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project1,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'l2',
-        footerHead: 'DƏMİRYOLU LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project2,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    
-];
-
-const completedProjects = [
-    {
-        id: 'a3',
-        footerHead: 'METRO LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project3,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'a4',
-        footerHead: 'SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project1,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'a5',
-        footerHead: 'HAVA LİMANI LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project2,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-    {
-        id: 'a6',
-        footerHead: 'ÜST QURULUŞ LAYİHƏLƏRİ',
-        footerText: 'Construction Works of Trabzon – Askale Bridge and Tunnel',
-        img: project3,
-        desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu...'
-    },
-];
+import { allProjects } from '../../assets/dummyApi/project-api';
+import { continuedProjects } from '../../assets/dummyApi/project-api';
+import { completedProjects } from '../../assets/dummyApi/project-api';
 
 const Projects = () => {
     const [showId,setShowId] = useState(null);
@@ -147,7 +53,7 @@ const Projects = () => {
                                 <span>
                                     {item.desc}
                                 </span>
-                                <Link to="/projects" className="project-more-button mt-3">
+                                <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
                                     <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
@@ -156,7 +62,7 @@ const Projects = () => {
                                 Ətraflı
                             </div>}
                         </div>
-                        {showId === item.id && !(showDetailId === item.id)  && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>Construction Works of Trabzon – Askale Bridge and Tunnel</p>}
+                        {showId === item.id && !(showDetailId === item.id)  && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
                 ))}
@@ -176,7 +82,7 @@ const Projects = () => {
                                 <span>
                                     {item.desc}
                                 </span>
-                                <Link to="/projects" className="project-more-button mt-3">
+                                <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
                                     <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
@@ -185,7 +91,7 @@ const Projects = () => {
                                 Ətraflı
                             </div>}
                         </div>
-                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>Construction Works of Trabzon – Askale Bridge and Tunnel</p>}
+                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
                 ))}
@@ -205,7 +111,7 @@ const Projects = () => {
                                 <span>
                                     {item.desc}
                                 </span>
-                                <Link to="/projects" className="project-more-button mt-3">
+                                <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
                                     <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
@@ -214,7 +120,7 @@ const Projects = () => {
                                 Ətraflı
                             </div>}
                         </div>
-                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>Construction Works of Trabzon – Askale Bridge and Tunnel</p>}
+                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
                 ))}

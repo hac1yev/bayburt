@@ -207,6 +207,15 @@
     fill: #fff;
 }
 
+.dark .project-detail-desc, 
+.dark .project-detail-title {
+    color: #fff;
+}
+
+.dark .project-detail-row {
+    background-color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
