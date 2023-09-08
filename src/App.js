@@ -13,6 +13,12 @@ import Certificat from './pages/Certificate/Certificat';
 import Founder from './pages/Founder/Founder';
 import Contact from './pages/Contact/Contact';
 import ProjectDetail from './pages/Projects/ProjectDetail';
+import HighwayProjects from './pages/Projects/HighwayProjects';
+import SubwayProjects from './pages/Projects/SubwayProjects';
+import DamPortProjects from './pages/Projects/DamPortProjects';
+import AirportProjects from './pages/Projects/AirportProjects';
+import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
+import RailwayProjects from './pages/Projects/RailwayProjects';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -27,6 +33,12 @@ const App = () => {
           <Route path='/about/politics' element={<Siyaset />} />
           <Route path='/about/directors-board' element={<DirectorsBoard />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/projects/highway' element={<HighwayProjects />} />
+          <Route path='/projects/railway' element={<RailwayProjects />} />
+          <Route path='/projects/subway' element={<SubwayProjects />} />
+          <Route path='/projects/dam-port' element={<DamPortProjects />} />
+          <Route path='/projects/airport' element={<AirportProjects />} />
+          <Route path='/projects/superstructure' element={<SuperstructureProjects />} />
           <Route path='/projects/:projectId' element={<ProjectDetail />} />
           <Route path='/about/certificat' element={<Certificat />} />
           <Route path='/about/founder' element={<Founder />} />
