@@ -63,7 +63,7 @@
 
 .uzvluk-slider img , .certificate-slider img{
   object-fit: contain;
-  width: 100%;
+  width: 85%;
 }
 
 .uzv-name p {
@@ -96,5 +96,9 @@
 @media screen and (max-width: 768px) {
   .uzvluk-slider {
     height: 250px;
+  }
+
+  .uzvluk-slider img , .certificate-slider img{
+    width: 95%;
   }
 }
