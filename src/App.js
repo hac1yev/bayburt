@@ -19,6 +19,7 @@ import DamPortProjects from './pages/Projects/DamPortProjects';
 import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
+import Activity from './pages/Activity/Activity';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -43,6 +44,7 @@ const App = () => {
           <Route path='/about/certificat' element={<Certificat />} />
           <Route path='/about/founder' element={<Founder />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/activity' element={<Activity />} />
       </Routes>
       <Footer />
     </div>
