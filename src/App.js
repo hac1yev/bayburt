@@ -20,6 +20,7 @@ import DamPortProjects from './pages/Projects/DamPortProjects';
 import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
+import Construction from './pages/Construction/Construction';
 
 
 const App = () => {
@@ -46,6 +47,8 @@ const App = () => {
           <Route path='/about/founder' element={<Founder />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/activity' element={<Activity />} />
+          <Route path='/construction' element={<Construction />} />
+        
       </Routes>
       <Footer />
     </div>
