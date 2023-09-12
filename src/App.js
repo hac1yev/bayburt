@@ -12,6 +12,7 @@ import Projects from './pages/Projects/Projects';
 import Certificat from './pages/Certificate/Certificat';
 import Founder from './pages/Founder/Founder';
 import Contact from './pages/Contact/Contact';
+import Activity from './pages/Activity/Activity';
 import ProjectDetail from './pages/Projects/ProjectDetail';
 import HighwayProjects from './pages/Projects/HighwayProjects';
 import SubwayProjects from './pages/Projects/SubwayProjects';
@@ -20,6 +21,7 @@ import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
 import Activity from './pages/Activity/Activity';
+
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
