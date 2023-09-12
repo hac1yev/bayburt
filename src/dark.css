@@ -238,6 +238,16 @@
     color: #fff;
 }
 
+ .dark .activity-card {
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0px 0px 10px 0px rgba(253, 253, 253, 0.25);
+}
+
+.dark .activity-card h4,
+.dark .activity-card p {
+    color: #FDFDFD;
+}
+
 @media screen and (max-width: 768px) {
     .dark .open-menu-link ul {
         background-color: #0d0d0d!important;
