@@ -20,6 +20,7 @@ import DamPortProjects from './pages/Projects/DamPortProjects';
 import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
+import Activity from './pages/Activity/Activity';
 
 
 const App = () => {
