@@ -21,7 +21,6 @@ import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
 
-
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
 
