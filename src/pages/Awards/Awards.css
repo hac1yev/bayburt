@@ -1,0 +1,46 @@
+.award-col {
+    display: flex!important;
+    justify-content: center!important;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.award-col img {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.award-col img:hover {
+    z-index: 20;
+    transform: scale(1.1);
+}
+
+.award-img1 {
+    position: absolute;
+    top: 140px;
+}
+
+.award-img6 {
+    position: absolute;
+    top: 190px;
+}
+
+.award-img4 {
+    position: absolute;
+    top: 0px;
+}
+
+.award-img2 {
+    position: absolute;
+    top: 60px;
+}
+
+.award-img5 {
+    position: absolute;
+    top: 80px;
+}
+
+.award-img1 {
+    position: absolute;
+    top: 130px;
+}
