@@ -21,6 +21,7 @@ import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
 import Awards from './pages/Awards/Awards';
+import Construction from './pages/Construction/Construction';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -47,6 +48,7 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/activity' element={<Activity />} />
           <Route path='/awards' element={<Awards />} />
+          <Route path='/construction' element={<Construction />} />
       </Routes>
       <Footer />
     </div>
