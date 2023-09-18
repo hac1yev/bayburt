@@ -21,6 +21,7 @@ import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
 import Construction from './pages/Construction/Construction';
+import CompanyGroups from './pages/CompanyGroups/CompanyGroups';
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/activity' element={<Activity />} />
           <Route path='/construction' element={<Construction />} />
+          <Route path='/companyGroups' element={<CompanyGroups />} />
         
       </Routes>
       <Footer />
