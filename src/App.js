@@ -30,7 +30,7 @@ const App = () => {
     <div className={mode === 'dark' ? 'dark' : ''}>
       <Header />
       <Routes>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/about/history' element={<History />} />
           <Route path='/about/mission' element={<Mission />} />
           <Route path='/about/politics' element={<Siyaset />} />
@@ -47,7 +47,7 @@ const App = () => {
           <Route path='/about/founder' element={<Founder />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/activity' element={<Activity />} />
-          <Route path='/awards' element={<Awards />} />
+          <Route path='/about/awards' element={<Awards />} />
           <Route path='/construction' element={<Construction />} />
       </Routes>
       <Footer />
