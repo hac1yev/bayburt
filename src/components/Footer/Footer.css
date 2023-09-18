@@ -3,6 +3,8 @@ a {
 }
 
 .main-footer-cont {
+  position: relative;
+  z-index: 30;
   background-color: black;
   width: 100%;
 }

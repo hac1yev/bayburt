@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import { useSelector } from 'react-redux';
 import History from './pages/History/History';
 import Mission from './pages/Mission/Mission';
@@ -20,9 +20,9 @@ import DamPortProjects from './pages/Projects/DamPortProjects';
 import AirportProjects from './pages/Projects/AirportProjects';
 import SuperstructureProjects from './pages/Projects/SuperstructureProjects';
 import RailwayProjects from './pages/Projects/RailwayProjects';
+import Awards from './pages/Awards/Awards';
 import Construction from './pages/Construction/Construction';
 import CompanyGroups from './pages/CompanyGroups/CompanyGroups';
-
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -31,7 +31,7 @@ const App = () => {
     <div className={mode === 'dark' ? 'dark' : ''}>
       <Header />
       <Routes>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/about/history' element={<History />} />
           <Route path='/about/mission' element={<Mission />} />
           <Route path='/about/politics' element={<Siyaset />} />
@@ -48,9 +48,11 @@ const App = () => {
           <Route path='/about/founder' element={<Founder />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/activity' element={<Activity />} />
+          <Route path='/about/awards' element={<Awards />} />
           <Route path='/construction' element={<Construction />} />
           <Route path='/companyGroups' element={<CompanyGroups />} />
         
+
       </Routes>
       <Footer />
     </div>
