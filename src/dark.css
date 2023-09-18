@@ -81,6 +81,26 @@
     color: #fff;
 }
 
+.dark .contact-div h1,
+.dark .form-inner label,
+.dark .form-inner-div span {
+    color: #F3F8EA;
+}
+
+.dark .form-1 {
+    border-color: #F3F8EA;
+}
+
+.dark .form-inner input, 
+.dark .form-inner textarea {
+    background-color: transparent;
+    color: #F3F8EA;
+}
+
+.dark .contact-div form input[type="submit"] {
+    background-color: #F3F8EA;
+    color: #000;
+}
 
 .dark .footer-div-1-inner-img img{
     filter: invert(1);
