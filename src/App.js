@@ -24,6 +24,7 @@ import Awards from './pages/Awards/Awards';
 import Construction from './pages/Construction/Construction';
 import CompanyGroups from './pages/CompanyGroups/CompanyGroups';
 import News from './pages/News/News';
+import NewsDetail from './pages/News/NewsDetail';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -53,6 +54,7 @@ const App = () => {
           <Route path='/construction' element={<Construction />} />
           <Route path='/companyGroups' element={<CompanyGroups />} />
           <Route path='/news' element={<News />} />
+          <Route path='/news/:newsId' element={<NewsDetail />} />
       </Routes>
       <Footer />
     </div>

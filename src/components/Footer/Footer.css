@@ -16,7 +16,8 @@ a {
   border-bottom-right-radius: 150px;
 }
 
-.inner-cont-1  .row{
+.inner-cont-1 .row{
+  padding: 0 30px;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -310,4 +311,7 @@ a {
     font-size: 18px;
   }
 
+  .inner-cont-1 .row {
+    padding: 0 15px;
+  }
 }
