@@ -23,6 +23,7 @@ import RailwayProjects from './pages/Projects/RailwayProjects';
 import Awards from './pages/Awards/Awards';
 import Construction from './pages/Construction/Construction';
 import CompanyGroups from './pages/CompanyGroups/CompanyGroups';
+import News from './pages/News/News';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -51,8 +52,7 @@ const App = () => {
           <Route path='/about/awards' element={<Awards />} />
           <Route path='/construction' element={<Construction />} />
           <Route path='/companyGroups' element={<CompanyGroups />} />
-        
-
+          <Route path='/news' element={<News />} />
       </Routes>
       <Footer />
     </div>
