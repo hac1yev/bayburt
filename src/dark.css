@@ -111,10 +111,10 @@
     color: #fff;
 }
 
-.dark .open-menu-link ul li a:hover,
+/* .dark .open-menu-link ul li a:hover,
 .dark .about-div:hover {
     background-color: #c7c7c7;
-}
+} */
 
 .dark .footer-input svg{
     filter: invert(1);
