@@ -8,6 +8,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { modeSliceActions } from '../../store/mode-slice';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { MdKeyboardArrowRight } from 'react-icons/md';
+import { SlLocationPin } from 'react-icons/sl';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BiPhone } from 'react-icons/bi';
 import close from '../../assets/images/close.png';
 import close_dark from '../../assets/images/close-dark.png';
 
@@ -58,7 +62,7 @@ const Header = () => {
                 </div>
             </div>
             <div className='open-menu-link'>
-                {isMenuOpen && <ul className={isDarkMode === 'dark' && 'open-menu-ul'}>
+                {/* {isMenuOpen && <ul className={isDarkMode === 'dark' && 'open-menu-ul'}>
                 <div className='close-icon' onClick={handleCloseMenu}>
                     <img src={isDarkMode === 'dark' ? close_dark : close} alt="close" />
                 </div>
@@ -147,7 +151,83 @@ const Header = () => {
                             AZ
                         </Link>
                     </li>
-                </ul>}
+                </ul>} */}
+                <div className='desktop-menu-bar'>
+                    <div className='desktop-navbar-top'>
+                        <ul>
+                            <li>
+                                <Link to='/'>
+                                    ƏSAS SƏHİFƏ
+                                    <MdKeyboardArrowRight />
+                                </Link>
+                            </li>
+                            <div className='desktop-about-wrap'>
+                                <li className='desktop-about-li' onClick={handleShowDropdown}>
+                                    <div>
+                                        HAQQIMIZDA
+                                        <MdKeyboardArrowRight />
+                                    </div>
+                                </li>
+                                {showDrop && (
+                                    <div className='desktop-dropdown-menu'>
+                                        <Link to="/about/history">TARIXÇƏ</Link>
+                                        <Link to="/about/mission">MİSSİYA VƏ VİZYON</Link>
+                                        <Link to="/about/politics">ŞİRKƏT SİYASƏTİMİZ</Link>
+                                        <Link to="/about/directors-board">İDARƏ HEYƏTİ</Link>
+                                        <Link to="/">RƏHBƏRİN MESAJI</Link>
+                                        <Link to="/">QRUP ŞİRKƏTLƏRİ</Link>
+                                        <Link to="/about/award">MÜKAFAT VƏ UĞURLAR</Link>
+                                        <Link to="/about/certificat">ÜZVLÜK VƏ SERTİFİKATLAR</Link>
+                                        <Link to="/about/founder">QURUCULARIMIZ</Link>
+                                    </div>
+                                )}
+                            </div>
+                            <li>
+                                <Link to='/activity'>
+                                    FƏALİYYƏT SAHƏLƏRİ
+                                    <MdKeyboardArrowRight />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/projects'>
+                                    LAYİHƏLƏR
+                                    <MdKeyboardArrowRight />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/'>
+                                    SOSİAL MƏSULİYYƏT
+                                    <MdKeyboardArrowRight />
+                                </Link>
+                            </li>
+                        </ul>
+                        <div>
+                            <span>
+                                <SlLocationPin />
+                                Anıttepe Məh. Işık küç. No: 20 Çankaya/Ankara
+                            </span>
+                            <span>
+                                <BiPhone />
+                                +90(312) 229 08 08
+                            </span>
+                            <span>
+                                <BiPhone />
+                                +90(312) 229 00 10
+                            </span>
+                            <span>
+                                <AiOutlineMail />
+                                info@bayburtgrup.com.tr
+                            </span>
+                        </div>
+                    </div>
+                    <div className='desktop-navbar-bottom'>
+                        <img src={senbay_logo} alt="senbay-logo" />
+                        <Link to="/contact">
+                            <p>ƏLAQƏ</p>  
+                            <MdKeyboardArrowRight />
+                        </Link>
+                    </div>
+                </div>
                 <div className={(isDarkMode === 'light' && isMenuOpen) ? 'menu-icon active-menu-icon' : 'menu-icon'} onClick={handleMenuBar}>
                     <GiHamburgerMenu />
                 </div>
