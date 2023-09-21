@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { modeSliceActions } from '../../store/mode-slice';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { MdKeyboardArrowRight } from 'react-icons/md';
+import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
 import { SlLocationPin } from 'react-icons/sl';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BiPhone } from 'react-icons/bi';
@@ -41,7 +41,7 @@ const Header = () => {
     }
 
     const handleShowDropdown = () => {
-        setShowDrop(true);
+        setShowDrop(prev => !prev);
     };
 
     const handleHideDropdown = () => {
@@ -153,19 +153,18 @@ const Header = () => {
                     </li>
                 </ul>} */}
                 <div className='desktop-menu-bar'>
-                    <div className='desktop-navbar-top'>
-                        <ul>
+                    <div className='desktop-navbar-top row'>
+                        <ul className='col-lg-8'>
                             <li>
                                 <Link to='/'>
                                     ƏSAS SƏHİFƏ
-                                    <MdKeyboardArrowRight />
                                 </Link>
                             </li>
                             <div className='desktop-about-wrap'>
                                 <li className='desktop-about-li' onClick={handleShowDropdown}>
                                     <div>
                                         HAQQIMIZDA
-                                        <MdKeyboardArrowRight />
+                                        {!showDrop ? <MdKeyboardArrowRight /> : <MdKeyboardArrowDown />}
                                     </div>
                                 </li>
                                 {showDrop && (
@@ -185,7 +184,6 @@ const Header = () => {
                             <li>
                                 <Link to='/activity'>
                                     FƏALİYYƏT SAHƏLƏRİ
-                                    <MdKeyboardArrowRight />
                                 </Link>
                             </li>
                             <li>
@@ -197,11 +195,10 @@ const Header = () => {
                             <li>
                                 <Link to='/'>
                                     SOSİAL MƏSULİYYƏT
-                                    <MdKeyboardArrowRight />
                                 </Link>
                             </li>
                         </ul>
-                        <div>
+                        <div className='col-lg-4'>
                             <span>
                                 <SlLocationPin />
                                 Anıttepe Məh. Işık küç. No: 20 Çankaya/Ankara
