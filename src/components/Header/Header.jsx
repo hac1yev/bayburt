@@ -154,6 +154,20 @@ const Header = () => {
                 </ul>} */}
                 <div className='desktop-menu-bar'>
                     <div className='desktop-navbar-top row'>
+                        <div className="col-12 px-0 mobile-navbar-top">
+                            <img className="mobile-senbay-logo" src={senbay_logo} alt="senbay-logo" />
+                            <div className={isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
+                                <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
+                                    <FiSun />
+                                </div>
+                                <div onClick={handleDarkMode} className={isDarkMode === 'dark' ? 'dark-icon mode-active' : 'dark-icon'}>
+                                    <BsMoon />
+                                </div>
+                            </div>
+                            <div className={(isDarkMode === 'light' && isMenuOpen) ? 'menu-icon active-menu-icon' : 'menu-icon'} onClick={handleMenuBar}>
+                                <GiHamburgerMenu />
+                            </div>
+                        </div>
                         <ul className='col-lg-8'>
                             <li>
                                 <Link to='/'>
@@ -198,7 +212,7 @@ const Header = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <div className='col-lg-4'>
+                        <div className='col-lg-4 contact-phone-numbers'>
                             <span>
                                 <SlLocationPin />
                                 Anıttepe Məh. Işık küç. No: 20 Çankaya/Ankara
