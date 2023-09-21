@@ -351,7 +351,15 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 60%;
+    width: 70%;
+}
+
+.mobile-senbay-logo {
+    display: none;
+}
+
+.mobile-navbar-top {
+    display: none!important;
 }
 
 @media screen and (max-width: 1150px) {
@@ -406,11 +414,51 @@ header {
         width: 32px;
         height: 32px;
     }
-
-    .desktop-menu-bar {
-        height: auto;
-    }
 }   
+
+@media screen and (max-width: 991.5px) {
+    .desktop-navbar-top ul {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mobile-senbay-logo {
+        display: block;
+        width: 160px;
+        height: 48px;
+    }
+
+    .dark-light-wrap {
+        display: flex!important;
+    }
+
+    .contact-phone-numbers {
+        display: none!important;
+    }
+
+    .desktop-navbar-bottom img {
+        display: none;
+    }
+
+    .desktop-navbar-top ul li a, 
+    .desktop-navbar-top ul li div,
+    .desktop-navbar-bottom a p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .desktop-dropdown-menu a {
+        width: 100%;
+        font-size: 16px!important;
+    }
+
+    .mobile-navbar-top {
+        display: flex!important;
+        flex-direction: row!important;
+        align-items: center!important;
+        justify-content: space-between;
+    }
+}
 
 @media screen and (max-width: 768px) {
     header {
@@ -525,6 +573,50 @@ header {
 
     } */
 
+    .desktop-menu-bar {
+        padding: 15px;
+    }
+
+    .mobile-senbay-logo {
+        display: block;
+        width: 120px;
+        height: 48px;
+    }
+
+    .dark-light-wrap {
+        width: 80px;
+        height: 35px;
+    }
+
+    .light-icon svg, 
+    .dark-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .desktop-navbar-top ul li a, .desktop-navbar-top ul li div, .desktop-navbar-bottom a p {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .desktop-navbar-top ul {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .desktop-navbar-bottom a {
+        width: 50%;
+    }
+
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dark-light-wrap {
+        left: 52%;
+    }
+
     @keyframes mymove {
         0% {top: -100%; opacity: 0;}
         100% {top: 0px; opacity: 1;}
@@ -544,5 +636,26 @@ header {
     .close-icon {
         width: 25px;
         height: 25px;
+    }
+
+    .dark-light-wrap {
+        width: 70px;
+        height: 30px;
+    }
+
+    .mobile-senbay-logo {
+        display: block;
+        width: 110px;
+        height: 43px;
+    }
+
+    .desktop-navbar-top ul li a, .desktop-navbar-top ul li div, .desktop-navbar-bottom a p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .desktop-navbar-top ul li svg,
+    .desktop-navbar-bottom a svg {
+        font-size: 35px;
     }
 }
