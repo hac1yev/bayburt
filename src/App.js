@@ -34,7 +34,7 @@ const App = () => {
       <Header />
       <Routes>
           {/* <Route path='/' element={<Home />} /> */}
-          <Route path='/about/history' element={<History />} />
+          {/* <Route path='/about/history' element={<History />} />
           <Route path='/about/mission' element={<Mission />} />
           <Route path='/about/politics' element={<Siyaset />} />
           <Route path='/about/directors-board' element={<DirectorsBoard />} />
@@ -54,7 +54,7 @@ const App = () => {
           <Route path='/construction' element={<Construction />} />
           <Route path='/companyGroups' element={<CompanyGroups />} />
           <Route path='/news' element={<News />} />
-          <Route path='/news/:newsId' element={<NewsDetail />} />
+          <Route path='/news/:newsId' element={<NewsDetail />} /> */}
       </Routes>
       <Footer />
     </div>
