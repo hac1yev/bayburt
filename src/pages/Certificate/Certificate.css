@@ -63,7 +63,7 @@
 
 .uzvluk-slider img , .certificate-slider img{
   object-fit: contain;
-  width: 85%;
+  width: 100%;
 }
 
 .uzv-name p {
