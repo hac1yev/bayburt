@@ -205,6 +205,7 @@ header {
     padding: 20px;
     padding-top: 30px;
     padding-bottom: 10px;
+    z-index: 100000000;
 }
 
 .desktop-menu-bar {
@@ -212,6 +213,7 @@ header {
 }
 
 .close-menu-bar {
+    z-index: 100000000;
     top: -120%;
     animation: closeMenu 0.4s ease-in-out!important;
 }
