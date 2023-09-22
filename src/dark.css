@@ -140,6 +140,30 @@
     color: #fff;
 }
 
+.dark .desktop-navbar-top ul li div {
+    color: #fff;
+}
+
+.dark .desktop-navbar-top ul li a {
+    color: #fff;
+}
+
+.dark .desktop-navbar-top div span {
+    color: #fff;
+}
+
+.dark .desktop-navbar-top ul li {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.dark .desktop-dropdown-menu a {
+    border-bottom: 0.4px solid #fff;
+}
+
+.dark .desktop-dropdown-menu a {
+    color: #fff;
+}
+
 .dark .mybtn {
     color: #fff;
     border-color: #fff;
@@ -276,11 +300,15 @@
     color: hsl(0, 0%, 40%);
 }
 
-@media screen and (max-width: 768px) {
-    .dark .open-menu-link ul {
-        background-color: #0d0d0d!important;
-    }
+.dark .desktop-navbar-bottom a svg {
+    color: #fff;
+}
 
+.dark .desktop-navbar-bottom a p {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
     .dark .open-menu-link ul li a,
     .dark .about-div {
         color: #fff!important;

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-// import Home from './pages/Home';
+import Home from './pages/Home';
 import { useSelector } from 'react-redux';
 import History from './pages/History/History';
 import Mission from './pages/Mission/Mission';
@@ -33,8 +33,8 @@ const App = () => {
     <div className={mode === 'dark' ? 'dark' : ''}>
       <Header />
       <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
-          {/* <Route path='/about/history' element={<History />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about/history' element={<History />} />
           <Route path='/about/mission' element={<Mission />} />
           <Route path='/about/politics' element={<Siyaset />} />
           <Route path='/about/directors-board' element={<DirectorsBoard />} />
@@ -54,7 +54,7 @@ const App = () => {
           <Route path='/construction' element={<Construction />} />
           <Route path='/companyGroups' element={<CompanyGroups />} />
           <Route path='/news' element={<News />} />
-          <Route path='/news/:newsId' element={<NewsDetail />} /> */}
+          <Route path='/news/:newsId' element={<NewsDetail />} />
       </Routes>
       <Footer />
     </div>

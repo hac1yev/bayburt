@@ -43,15 +43,11 @@ const Header = () => {
     const handleShowDropdown = () => {
         setShowDrop(prev => !prev);
     };
-
-    const handleHideDropdown = () => {
-        setShowDrop(false);
-    };
     
     return (
         <header className='container'>
             <div className='header-logo'>
-                <Link to='/'><img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" /></Link>
+                {!isMenuOpen && <Link to='/'><img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" /></Link>}
             </div>
             <div className={isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
                 <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
@@ -152,11 +148,13 @@ const Header = () => {
                         </Link>
                     </li>
                 </ul>} */}
-                <div className='desktop-menu-bar'>
+                <div className={isMenuOpen ? "desktop-menu-bar" : "desktop-menu-bar  close-menu-bar"}>
                     <div className='desktop-navbar-top row'>
                         <div className="col-12 px-0 mobile-navbar-top">
-                            <img className="mobile-senbay-logo" src={senbay_logo} alt="senbay-logo" />
-                            <div className={isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
+                            <Link to='/' onClick={handleCloseMenu}>
+                                <img className="mobile-senbay-logo" src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" />
+                            </Link>
+                            <div className={!isMenuOpen ? 'd-none' : 'dark-light-wrap'}>
                                 <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
                                     <FiSun />
                                 </div>
@@ -164,13 +162,13 @@ const Header = () => {
                                     <BsMoon />
                                 </div>
                             </div>
-                            <div className={(isDarkMode === 'light' && isMenuOpen) ? 'menu-icon active-menu-icon' : 'menu-icon'} onClick={handleMenuBar}>
-                                <GiHamburgerMenu />
+                            <div className="close-icon" onClick={handleCloseMenu}>
+                                <img src={isDarkMode === 'dark' ? close_dark : close} alt="close-icon" />
                             </div>
                         </div>
                         <ul className='col-lg-8'>
                             <li>
-                                <Link to='/'>
+                                <Link to='/' onClick={handleCloseMenu}>
                                     ƏSAS SƏHİFƏ
                                 </Link>
                             </li>
@@ -183,31 +181,31 @@ const Header = () => {
                                 </li>
                                 {showDrop && (
                                     <div className='desktop-dropdown-menu'>
-                                        <Link to="/about/history">TARIXÇƏ</Link>
-                                        <Link to="/about/mission">MİSSİYA VƏ VİZYON</Link>
-                                        <Link to="/about/politics">ŞİRKƏT SİYASƏTİMİZ</Link>
-                                        <Link to="/about/directors-board">İDARƏ HEYƏTİ</Link>
-                                        <Link to="/">RƏHBƏRİN MESAJI</Link>
-                                        <Link to="/">QRUP ŞİRKƏTLƏRİ</Link>
-                                        <Link to="/about/award">MÜKAFAT VƏ UĞURLAR</Link>
-                                        <Link to="/about/certificat">ÜZVLÜK VƏ SERTİFİKATLAR</Link>
-                                        <Link to="/about/founder">QURUCULARIMIZ</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/history">TARIXÇƏ</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/mission">MİSSİYA VƏ VİZYON</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/politics">ŞİRKƏT SİYASƏTİMİZ</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/directors-board">İDARƏ HEYƏTİ</Link>
+                                        <Link onClick={handleCloseMenu} to="/">RƏHBƏRİN MESAJI</Link>
+                                        <Link onClick={handleCloseMenu} to="/">QRUP ŞİRKƏTLƏRİ</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/award">MÜKAFAT VƏ UĞURLAR</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/certificat">ÜZVLÜK VƏ SERTİFİKATLAR</Link>
+                                        <Link onClick={handleCloseMenu} to="/about/founder">QURUCULARIMIZ</Link>
                                     </div>
                                 )}
                             </div>
                             <li>
-                                <Link to='/activity'>
+                                <Link onClick={handleCloseMenu} to='/activity'>
                                     FƏALİYYƏT SAHƏLƏRİ
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/projects'>
+                                <Link onClick={handleCloseMenu} to='/projects'>
                                     LAYİHƏLƏR
                                     <MdKeyboardArrowRight />
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/'>
+                                <Link onClick={handleCloseMenu} to='/'>
                                     SOSİAL MƏSULİYYƏT
                                 </Link>
                             </li>
@@ -232,8 +230,8 @@ const Header = () => {
                         </div>
                     </div>
                     <div className='desktop-navbar-bottom'>
-                        <img src={senbay_logo} alt="senbay-logo" />
-                        <Link to="/contact">
+                        <img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" />
+                        <Link to="/contact" onClick={handleCloseMenu}>
                             <p>ƏLAQƏ</p>  
                             <MdKeyboardArrowRight />
                         </Link>
