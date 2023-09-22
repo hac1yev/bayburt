@@ -207,6 +207,27 @@ header {
     padding-bottom: 10px;
 }
 
+.desktop-menu-bar {
+    animation: mymove 0.3s ease-in-out;
+}
+
+.close-menu-bar {
+    top: -120%;
+    animation: closeMenu 0.4s ease-in-out!important;
+}
+
+@keyframes closeMenu {
+    0% {top: 20px; opacity: 0.9;}
+    25% {top: -25%; opacity: 0.6;}
+    50% {top: -50%; opacity: 0.3;}
+    100% {top: -120%; opacity: 0;}
+}
+
+@keyframes mymove {
+    0% {top: -120%; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
+
 .desktop-navbar-top {
     display: flex;
     justify-content: space-between;
@@ -450,6 +471,7 @@ header {
     .desktop-dropdown-menu a {
         width: 100%;
         font-size: 16px!important;
+        padding: 5px 20px;
     }
 
     .mobile-navbar-top {
@@ -458,6 +480,21 @@ header {
         align-items: center!important;
         justify-content: space-between;
     }
+
+    .close-icon {
+        margin: 15px 0;
+        margin-right: 10px;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .close-icon img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -505,10 +542,8 @@ header {
     } */
 
     .close-icon {
-        margin: 15px 0;
-        display: block;
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
     }
 
     .close-icon img {
@@ -617,10 +652,10 @@ header {
         left: 52%;
     }
 
-    @keyframes mymove {
-        0% {top: -100%; opacity: 0;}
-        100% {top: 0px; opacity: 1;}
+    .desktop-dropdown-menu a {
+        font-size: 14px!important;
     }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -634,8 +669,8 @@ header {
     } */
 
     .close-icon {
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
     }
 
     .dark-light-wrap {
@@ -645,6 +680,11 @@ header {
 
     .mobile-senbay-logo {
         display: block;
+        width: 110px;
+        height: 43px;
+    }
+
+    .header-logo img {
         width: 110px;
         height: 43px;
     }
