@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import { Routes, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom'; 
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import { useSelector } from 'react-redux';

@@ -63,6 +63,44 @@ header {
     display: none;
 }
 
+.desktop-close-icon {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.desktop-close-icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.close-icon {
+    /* position: absolute;
+    top: 20px;
+    right: 20px; */
+    width: 40px;
+    height: 40px;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.close-icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
 .light-icon svg,
 .dark-icon svg {
     width: 25px;
@@ -203,7 +241,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 10px;
     z-index: 100000000;
 }
@@ -240,7 +278,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
-    padding-left: 0!important;
+    padding-left: 0;
     width: 50%;
 }
 
@@ -276,23 +314,27 @@ header {
 .desktop-navbar-top ul li div {
     color: #020202;
     font-family: Space Grotesk;
-    font-size: 26px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .desktop-navbar-top ul li a {
-    line-height: 45px;
+    line-height: 35px;
+}
+
+.desktop-navbar-top ul li > div {
+    height: 45px;
 }
 
 .desktop-navbar-top div span {
     color: #020202;
     font-family: Space Grotesk;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26.831px; 
+    line-height: 20.831px; 
     display: flex;
     gap: 5px;
 }
@@ -338,7 +380,7 @@ header {
 .desktop-navbar-bottom a p {
     color: #020202;
     font-family: Space Grotesk;
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 0;
     font-style: normal;
     font-weight: 700;
@@ -445,10 +487,22 @@ header {
         margin-top: 20px;
     }
 
+    .desktop-menu-bar {
+        padding-top: 30px;
+    }
+
     .mobile-senbay-logo {
         display: block;
         width: 160px;
         height: 48px;
+    }
+
+    .desktop-close-icon {
+        display: none;
+    }
+
+    .close-icon {
+        margin-right: 10px;
     }
 
     .dark-light-wrap {
@@ -467,13 +521,13 @@ header {
     .desktop-navbar-top ul li div,
     .desktop-navbar-bottom a p {
         font-size: 22px;
-        line-height: 40px;
+        line-height: 35px;
     }
 
     .desktop-dropdown-menu a {
-        width: 100%;
+        width: 75%;
         font-size: 16px!important;
-        padding: 5px 20px;
+        padding: 5px 0px;
     }
 
     .mobile-navbar-top {
@@ -483,7 +537,7 @@ header {
         justify-content: space-between;
     }
 
-    .close-icon {
+    /* .close-icon {
         margin: 15px 0;
         margin-right: 10px;
         display: block;
@@ -494,7 +548,7 @@ header {
     .close-icon img{
         width: 100%;
         height: 100%;
-    }
+    } */
 
     
 }
@@ -544,13 +598,13 @@ header {
     } */
 
     .close-icon {
-        width: 27px;
-        height: 27px;
+        width: 32px;
+        height: 32px;
     }
 
     .close-icon img {
-        width: 100%;
-        height: 100%;
+        width: 20px;
+        height: 20px;
     }
 
     /* .open-menu-link ul li a,
@@ -639,6 +693,7 @@ header {
     .desktop-navbar-top ul {
         width: 100%;
         margin-top: 30px;
+        padding: 0 10px!important;
     }
 
     .desktop-navbar-bottom a {
@@ -671,8 +726,8 @@ header {
     } */
 
     .close-icon {
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
     }
 
     .dark-light-wrap {
@@ -699,5 +754,9 @@ header {
     .desktop-navbar-top ul li svg,
     .desktop-navbar-bottom a svg {
         font-size: 35px;
+    }
+
+    .padding-ul {
+        padding-left: 10px!important;
     }
 }

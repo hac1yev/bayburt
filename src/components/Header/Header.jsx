@@ -149,6 +149,9 @@ const Header = () => {
                     </li>
                 </ul>} */}
                 <div className={isMenuOpen ? "desktop-menu-bar" : "desktop-menu-bar  close-menu-bar"}>
+                    <div className="desktop-close-icon" onClick={handleCloseMenu}>
+                        <img src={isDarkMode === 'dark' ? close_dark : close} alt="close-icon" />
+                    </div>
                     <div className='desktop-navbar-top row'>
                         <div className="col-12 px-0 mobile-navbar-top">
                             <Link to='/' onClick={handleCloseMenu}>
@@ -166,7 +169,7 @@ const Header = () => {
                                 <img src={isDarkMode === 'dark' ? close_dark : close} alt="close-icon" />
                             </div>
                         </div>
-                        <ul className='col-lg-8'>
+                        <ul className='col-lg-8 padding-ul'>
                             <li>
                                 <Link to='/' onClick={handleCloseMenu}>
                                     ƏSAS SƏHİFƏ
@@ -199,10 +202,10 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={handleCloseMenu} to='/projects'>
+                                <div onClick={handleCloseMenu}>
                                     LAYİHƏLƏR
                                     <MdKeyboardArrowRight />
-                                </Link>
+                                </div>
                             </li>
                             <li>
                                 <Link onClick={handleCloseMenu} to='/'>
