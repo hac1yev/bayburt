@@ -8,9 +8,9 @@ const Contact = () => {
   const isDark = useSelector((state) => state.modeReducer.mode);
 
   return (
-    <div className="container contact-container">
+    <div className="container contact-container mb-5">
       <div className="row contact-div">
-        <div className="col-lg-4">
+        <div className="col-lg-5">
           <h1>ƏLAQƏ FORMU</h1>
           <img src={isDark === 'light' ? contactArrowLight : contactArrowDark} alt="contact-arrow" />
           <form action="">
@@ -79,7 +79,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="col-lg-5">
+        <div className="col-lg-6">
           <h1>ƏLAQƏ MƏLUMATLARI</h1>
           <img src={isDark === 'light' ? contactArrowLight : contactArrowDark} alt="contact-arrow" />
           <div className="form-inner-div">
