@@ -2,6 +2,16 @@
     background-color: #000;
 }
 
+.dark .desktop-close-icon {
+    background-color: #F3F1EB;
+    border: 1px solid #fff;
+}
+
+.dark .close-icon {
+    background-color: #F3F1EB;
+    border: 1px solid #fff;
+}
+
 .dark .hero-section h2 {
     color: #fff;
 }
@@ -306,6 +316,10 @@
 
 .dark .desktop-navbar-bottom a p {
     color: #fff;
+}
+
+.desktop-navbar-bottom a {
+    border-bottom: 1px solid #fff;
 }
 
 @media screen and (max-width: 768px) {
