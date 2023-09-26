@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import footerLogo from "../../assets/images/footer-logo.svg";
-import linkedin from "../../assets/images/link.svg";
-import twitter from "../../assets/images/twit.svg";
-import ytb from "../../assets/images/ytb.svg";
-import butaLogo from "../../assets/images/buta.svg";
+// import footerLogo from "../../assets/images/footer-logo.svg";
+// import linkedin from "../../assets/images/link.svg";
+// import twitter from "../../assets/images/twit.svg";
+// import ytb from "../../assets/images/ytb.svg";
+// import butaLogo from "../../assets/images/buta.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -69,7 +69,7 @@ const Footer = () => {
             <span>Anıttepe Məh. Işık küç. No: 20 Çankaya /ANKARA</span>
           </div>
           <div className="col-lg-1 col-md-12 footer-logo-div">
-            <img src={footerLogo} alt="" />
+            {/* <img src={footerLogo} alt="" /> */}
           </div>
         </div>
       </div>
@@ -78,18 +78,18 @@ const Footer = () => {
           <div className="footer-div-inner">
             <div className="social-icons-footer">
               <div>
-                <img src={linkedin} alt="" />
+                {/* <img src={linkedin} alt="" /> */}
               </div>
               <div>
-                <img src={twitter} alt="" />
+                {/* <img src={twitter} alt="" /> */}
               </div>
               <div>
-                <img src={ytb} alt="" />
+                {/* <img src={ytb} alt="" /> */}
               </div>
             </div>
             <div className="comp-name-footer">
               <span>Bütün Hüquqlar Qorunur.</span>
-              <img src={butaLogo} alt="" />
+              {/* <img src={butaLogo} alt="" /> */}
             </div>
             <div className="copyright-footer">
               <svg

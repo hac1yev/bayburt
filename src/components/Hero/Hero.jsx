@@ -50,7 +50,7 @@ const Hero = () => {
     return (
         <div className='hero-section container'>
             <h2>50 İLİ gerİdə qoyarkən...</h2>
-            <img className='img-fluid main-img' src={photos[currentImageIndex]} alt="" />
+            <img className='main-img' src={photos[currentImageIndex]} alt="" />
             <Marquee pauseOnHover='true' speed={40}>
                 <ul className='hero-ul'>
                     <li>MAGİSTRAL YOL , KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ</li><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
