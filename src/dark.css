@@ -217,7 +217,7 @@
 }
 
 .dark .accordion-button:not(.collapsed)::after{
-    content: url(./assets/images/up.svg) !important;
+    /* content: url(./assets/images/up.svg) !important; */
     filter: invert(0) !important;
 }
 

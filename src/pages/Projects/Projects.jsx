@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import more_icon from '../../assets/images/more-icon.svg';
+// import more_icon from '../../assets/images/more-icon.svg';
 import { Link } from 'react-router-dom';
 import { allProjects } from '../../assets/dummyApi/project-api';
 import { continuedProjects } from '../../assets/dummyApi/project-api';
@@ -44,7 +44,7 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
+                        <Link to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
@@ -54,14 +54,14 @@ const Projects = () => {
                                     {item.desc}
                                 </span>
                                 <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
-                                    <img src={more_icon} alt="more" />
+                                    {/* <img src={more_icon} alt="more" /> */}
                                     Ətraflı
                                 </Link>
                             </div>}
                             {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
                                 Ətraflı
                             </div>}
-                        </div>
+                        </Link>
                         {showId === item.id && !(showDetailId === item.id)  && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
+                        <Link to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
@@ -83,14 +83,14 @@ const Projects = () => {
                                     {item.desc}
                                 </span>
                                 <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
-                                    <img src={more_icon} alt="more" />
+                                    {/* <img src={more_icon} alt="more" /> */}
                                     Ətraflı
                                 </Link>
                             </div>}
                             {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
                                 Ətraflı
                             </div>}
-                        </div>
+                        </Link>
                         {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
@@ -102,7 +102,7 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"  
                     >
-                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
+                        <Link to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
@@ -112,14 +112,14 @@ const Projects = () => {
                                     {item.desc}
                                 </span>
                                 <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
-                                    <img src={more_icon} alt="more" />
+                                    {/* <img src={more_icon} alt="more" /> */}
                                     Ətraflı
                                 </Link>
                             </div>}
                             {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
                                 Ətraflı
                             </div>}
-                        </div>
+                        </Link>
                         {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                         <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
                     </div>
