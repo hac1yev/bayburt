@@ -7,16 +7,11 @@ import { continuedProjects } from '../../assets/dummyApi/project-api';
 import { completedProjects } from '../../assets/dummyApi/project-api';
 
 const SuperstructureProjects = () => {
-    const [showId,setShowId] = useState(null);
     const [showDetailId,setShowDetailId] = useState(null);
     const [projectTab,setProjectTab] = useState(1);
     
     const handleClick = (param) => {
         setProjectTab(param)
-    }
-
-    const handleChange = (id) => {
-        setShowId(id);
     }
 
     const handleShowDetail = (id) => {
@@ -39,16 +34,16 @@ const SuperstructureProjects = () => {
             <div className="row">
                 {projectTab === 1 && allProjects.map((item) => (
                     <div 
-                        className="col-lg-4 col-md-6 d-flex flex-column justify-content-center mt-3" 
+                        className="col-lg-4 col-md-6 d-flex flex-column justify-content-center mt-4" 
                         key={item.id}
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
-                            <div className='project-img'>
+                        <div className="px-0 project-cards">
+                            <div className='project-other-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
-                            {showDetailId === item.id && (showId === item.id) && <div className='project-content'>
+                            {showDetailId === item.id && <div className='project-content'>
                                 <p>{item.footerText}</p>
                                 <span>
                                     {item.desc}
@@ -58,26 +53,22 @@ const SuperstructureProjects = () => {
                                     Ətraflı
                                 </Link>
                             </div>}
-                            {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
-                                Ətraflı
-                            </div>}
                         </div>
-                        {showId === item.id && !(showDetailId === item.id)  && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
-                        <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
+                        {!(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                     </div>
                 ))}
                 {projectTab === 2 && continuedProjects.map((item) => (
                     <div 
-                        className="col-lg-4 col-md-6 d-flex flex-column justify-content-center mt-3" 
+                        className="col-lg-4 col-md-6 d-flex flex-column justify-content-center mt-4" 
                         key={item.id}
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
-                            <div className='project-img'>
+                        <div className="px-0 project-cards">
+                            <div className='project-other-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
-                            {showDetailId === item.id && (showId === item.id) && <div className='project-content'>
+                            {showDetailId === item.id && <div className='project-content'>
                                 <p>{item.footerText}</p>
                                 <span>
                                     {item.desc}
@@ -87,26 +78,22 @@ const SuperstructureProjects = () => {
                                     Ətraflı
                                 </Link>
                             </div>}
-                            {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
-                                Ətraflı
-                            </div>}
                         </div>
-                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
-                        <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
+                        {!(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                     </div>
                 ))}
                 {projectTab === 3 && completedProjects.map((item) => (
                     <div 
-                        className="col-lg-4 col-md-6 d-flex flex-column justify-content-center mt-3" 
+                        className="col-lg-4 col-md-6 d-flex flex-column justify-content-center mt-4" 
                         key={item.id}
                         data-aos="zoom-in-down"
                         data-aos-duration="500"  
                     >
-                        <div className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
-                            <div className='project-img'>
+                        <div className="px-0 project-cards">
+                            <div className='project-other-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
-                            {showDetailId === item.id && (showId === item.id) && <div className='project-content'>
+                            {showDetailId === item.id && <div className='project-content'>
                                 <p>{item.footerText}</p>
                                 <span>
                                     {item.desc}
@@ -116,12 +103,8 @@ const SuperstructureProjects = () => {
                                     Ətraflı
                                 </Link>
                             </div>}
-                            {!(showId === item.id) && <div className='project-more' onClick={handleChange.bind(null, item.id)}>
-                                Ətraflı
-                            </div>}
                         </div>
-                        {showId === item.id && !(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
-                        <h5 className='project-card-h5 mt-3'>{item.footerHead}</h5>
+                        {!(showDetailId === item.id) && <p className='project-card-p' onClick={handleShowDetail.bind(null, item.id)}>{item.footerText}</p>}
                     </div>
                 ))}
             </div>
