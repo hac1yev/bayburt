@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
-// import more_icon from '../../assets/images/more-icon.svg';
+import more_icon from '../../assets/images/more-icon.svg';
 import { Link } from 'react-router-dom';
 import { allProjects } from '../../assets/dummyApi/project-api';
 import { continuedProjects } from '../../assets/dummyApi/project-api';
@@ -49,7 +49,7 @@ const AirportProjects = () => {
                                     {item.desc}
                                 </span>
                                 <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
-                                    {/* <img src={more_icon} alt="more" /> */}
+                                    <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
                             </div>}
@@ -74,7 +74,7 @@ const AirportProjects = () => {
                                     {item.desc}
                                 </span>
                                 <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
-                                    {/* <img src={more_icon} alt="more" /> */}
+                                    <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
                             </div>}
@@ -99,7 +99,7 @@ const AirportProjects = () => {
                                     {item.desc}
                                 </span>
                                 <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
-                                    {/* <img src={more_icon} alt="more" /> */}
+                                    <img src={more_icon} alt="more" />
                                     Ətraflı
                                 </Link>
                             </div>}
