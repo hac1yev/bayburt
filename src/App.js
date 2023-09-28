@@ -26,6 +26,7 @@ import Construction from './pages/Construction/Construction';
 import CompanyGroups from './pages/CompanyGroups/CompanyGroups';
 import News from './pages/News/News';
 import NewsDetail from './pages/News/NewsDetail';
+import SosialService from './pages/SosialResponsibility/SosialResponsibility';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -56,6 +57,7 @@ const App = () => {
           <Route path='/companyGroups' element={<CompanyGroups />} />
           <Route path='/news' element={<News />} />
           <Route path='/news/:newsId' element={<NewsDetail />} />
+          <Route path='/social-responsibility' element={<SosialService />} />
       </Routes>
       <Footer />
     </div>

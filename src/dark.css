@@ -12,6 +12,22 @@
     border: 1px solid #fff;
 }
 
+.dark .header-section {
+    background-color: #000;
+}
+
+.dark .social-res-tabs h1 {
+    color: #B7B7B7;
+}
+
+.dark .social-res-tabs h1.active-sr {
+    color: #FDFDFD;
+}
+
+.dark .sr-content {
+    color: #fff;
+}
+
 .dark .hero-section h2 {
     color: #fff;
 }
