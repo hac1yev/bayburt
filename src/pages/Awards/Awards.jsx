@@ -102,7 +102,7 @@ const Awards = () => {
                         <p>{img.baygrup}</p>
                     </div>
                     {img?.imgs?.length > 0 && (
-                        <div className='award-body'>
+                        <div className='award-body' onClick={(e) => e.stopPropagation()}>
                             <div className='award-body-imgs'>
                                 <img className='img-fluid' src={img.imgs[0]} alt={img.year} />
                                 <img className='img-fluid' src={img.imgs[1]} alt={img.year} />

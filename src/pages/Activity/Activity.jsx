@@ -12,13 +12,13 @@ const Activity = () => {
                 <div className="row">
                     {activityData.map((item) => (
                         <div className="col-lg-4 col-md-6 activity-col">
-                            <Link to='/activity' className='activity-card'>
+                            <div className='activity-card'>
                                 <div className='activity-img'>
                                     <img src={item.img} alt={item.title} />
                                 </div>
                                 <h4>{item.title}</h4>
                                 <p>{item.desc}</p>
-                            </Link>
+                            </div>
                         </div>
                     ))}
                 </div>
