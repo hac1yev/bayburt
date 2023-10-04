@@ -8,7 +8,7 @@ const History = () => {
         <div className='row justify-content-between leader-message-container'>
             <div className='col-lg-3 leader-message-first'>
                 <h1>TARİHÇE</h1>
-                <Link to='/' className='mybtn text-center'>VIEW OUR TEAM</Link>
+                <Link to='/about/history' className='mybtn text-center'>VIEW OUR TEAM</Link>
             </div>
             <div className="leader-message-inner col-lg-8">
                 <p>Kurucumuz rahmetli Kıyasi Şentürk, 1973 yılında kardeşleri ile birlikte ‘Kıyasi Şentürk ve Ortakları’ unvanı ile alt yapı, taahhüt ve inşaat işlerine başlamışlardır. Üstlendikleri işlerin başarıyla tamamlanması ve yeni işlerin alınması, zamanla taahhütlerindeki işlerin büyümesini ve 30.03.1987 tarihinde Bayburt İnşaat Nak. San. ve Tic. Ltd. Şti. unvanı ile yeni firmanın kurulmasını sağlamıştır.</p>
