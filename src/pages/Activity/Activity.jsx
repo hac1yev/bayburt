@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import { activityData } from '../../assets/dummyApi/activity-api';
 import './Activity.css';
-import { Link } from 'react-router-dom';
 
 const Activity = () => {
     return (
