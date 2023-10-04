@@ -10,32 +10,38 @@ const Activity = () => {
         {
             id: 1,
             image: '/1.png',
-            link: 'MAGİSTRAL YOL , KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ'
+            link: 'MAGİSTRAL YOL , KÖRPÜ VƏ TUNEL LAYİHƏLƏRİ',
+            path: '/projects/highway'
         },
         {
             id: 2,
             image: '/2.png',
-            link: 'METRO LAYİHƏLƏRİ'
+            link: 'METRO LAYİHƏLƏRİ',
+            path: '/projects/subway'
         },
         {
             id: 3,
             image: '/3.png',
-            link: 'HAVA LİMANI LAYİHƏLƏRİ'
+            link: 'HAVA LİMANI LAYİHƏLƏRİ',
+            path: '/projects/airport'
         },
         {
             id: 4,
             image: '/4.png',
-            link: 'DƏMİR YOLU LAYİHƏLƏRİ'
+            link: 'DƏMİR YOLU LAYİHƏLƏRİ',
+            path: '/projects/railway'
         },
         {
             id: 5,
             image: '/5.png',
-            link: 'SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ'
+            link: 'SULAMA, BƏND VƏ LİMAN LAYİHƏLƏRİ',
+            path: '/projects/dam-port'
         },
         {
             id: 6,
             image: '/6.png',
-            link: 'ÜST QURULUŞ LAYİHƏLƏRİ'
+            link: 'ÜST QURULUŞ LAYİHƏLƏRİ',
+            path: '/projects/superstructure'
         },
     ]
 
