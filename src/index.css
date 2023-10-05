@@ -21,6 +21,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 0 40px!important;
+  }
+}
+
 body {
   /* background-color: #0A0A0B!important; */
 }
