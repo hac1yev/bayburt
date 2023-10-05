@@ -25,7 +25,24 @@
   .container {
     padding: 0 40px!important;
   }
+
+  header {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 1.5rem!important;
+  }
+
+  header {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+  }
+}
+
 
 body {
   /* background-color: #0A0A0B!important; */
