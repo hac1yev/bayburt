@@ -46,7 +46,7 @@ const Header = () => {
     
     return (
         <div className='header-section'>
-            <header className='container'>
+            <header className='container header-container'>
                 <div className='header-logo'>
                     {!isMenuOpen && <Link to='/'><img src={isDarkMode === 'dark' ? senbay_logo_dark : senbay_logo} alt="senbay-logo" /></Link>}
                 </div>
