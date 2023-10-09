@@ -38,6 +38,8 @@ const Header = () => {
 
     const handleCloseMenu = () => {
         setIsMenuOpen(false);
+        window.scrollTo(0,0);
+        setShowDrop(false);
     }
 
     const handleShowDropdown = () => {
@@ -59,96 +61,6 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='open-menu-link'>
-                    {/* {isMenuOpen && <ul className={isDarkMode === 'dark' && 'open-menu-ul'}>
-                    <div className='close-icon' onClick={handleCloseMenu}>
-                        <img src={isDarkMode === 'dark' ? close_dark : close} alt="close" />
-                    </div>
-                    <div className='dark-light-wrap mobile-dark-light'>
-                        <div onClick={handleLightMode} className={isDarkMode === 'dark' ? 'light-icon' : 'light-icon mode-active'}>
-                            <FiSun />
-                        </div>
-                        <div onClick={handleDarkMode} className={isDarkMode === 'dark' ? 'dark-icon mode-active' : 'dark-icon'}>
-                            <BsMoon />
-                        </div>
-                    </div>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/">
-                                ƏSAS SƏHİFƏ
-                            </Link>
-                        </li>
-                        <li className='about-li-wrap' onMouseEnter={handleShowDropdown} onMouseLeave={handleHideDropdown}>
-                            <div className="about-div" to="/about/history">
-                                HAQQIMIZDA
-                            </div>
-                            {showDrop && (
-                                <li className='about-dropdown'>
-                                    <div>
-                                        <Link onClick={handleCloseMenu} to="/about/history">
-                                            TARİXÇƏ
-                                        </Link>
-                                        <Link onClick={handleCloseMenu} to="/about/mission">
-                                            MİSSİYA VƏ VİZYON
-                                        </Link>
-                                        <Link onClick={handleCloseMenu} to="/about/politics">
-                                            ŞİRKƏT SİYASƏTİMİZ
-                                        </Link>
-                                    </div>
-                                    <div>
-                                        <Link onClick={handleCloseMenu} to="/about/directors-board">
-                                            İDARƏ HEYƏTİ
-                                        </Link>
-                                        <Link onClick={handleCloseMenu} to="/">
-                                            RƏHBƏRİN MESAJI
-                                        </Link>
-                                        <Link onClick={handleCloseMenu} to="/">
-                                            QRUP ŞİRKƏTLƏRİ
-                                        </Link>
-                                    </div>
-                                    <div>
-                                        <Link onClick={handleCloseMenu} to="/about/awards">
-                                            MÜKAFAT VƏ UĞURLAR
-                                        </Link>
-                                        <Link onClick={handleCloseMenu} to="/about/certificat">
-                                            ÜZVLÜK VƏ SERTİFİKATLAR
-                                        </Link>
-                                        <Link onClick={handleCloseMenu} to="/about/founder">
-                                            QURUCULARIMIZ
-                                        </Link>
-                                    </div>
-                                </li>
-                            )}
-                        </li>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/">
-                                FƏALİYYƏT SAHƏLƏRİ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/projects">
-                                LAYİHƏLƏR
-                            </Link>
-                        </li>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/">
-                                SOSİAL MƏSULİYYƏT
-                            </Link>
-                        </li>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/news">
-                                XƏBƏRLƏR
-                            </Link>
-                        </li>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/contact">
-                                ƏLAQƏ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link onClick={handleCloseMenu} to="/">
-                                AZ
-                            </Link>
-                        </li>
-                    </ul>} */}
                     <div className={isMenuOpen ? "desktop-menu-bar" : "desktop-menu-bar  close-menu-bar"}>
                         <div className="desktop-close-icon" onClick={handleCloseMenu}>
                             <img src={isDarkMode === 'dark' ? close_dark : close} alt="close-icon" />
@@ -190,7 +102,7 @@ const Header = () => {
                                             <Link onClick={handleCloseMenu} to="/about/politics">ŞİRKƏT SİYASƏTİMİZ</Link>
                                             <Link onClick={handleCloseMenu} to="/about/directors-board">İDARƏ HEYƏTİ</Link>
                                             <Link onClick={handleCloseMenu} to="/">RƏHBƏRİN MESAJI</Link>
-                                            <Link onClick={handleCloseMenu} to="/">QRUP ŞİRKƏTLƏRİ</Link>
+                                            <Link onClick={handleCloseMenu} to="/about/companyGroups">QRUP ŞİRKƏTLƏRİ</Link>
                                             <Link onClick={handleCloseMenu} to="/about/awards">MÜKAFAT VƏ UĞURLAR</Link>
                                             <Link onClick={handleCloseMenu} to="/about/certificat">ÜZVLÜK VƏ SERTİFİKATLAR</Link>
                                             <Link onClick={handleCloseMenu} to="/about/founder">QURUCULARIMIZ</Link>
@@ -203,10 +115,9 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <div onClick={handleCloseMenu}>
+                                    <Link onClick={handleCloseMenu} to='/projects'>
                                         LAYİHƏLƏR
-                                        <MdKeyboardArrowRight />
-                                    </div>
+                                    </Link>
                                 </li>
                                 <li>
                                     <Link onClick={handleCloseMenu} to='/social-responsibility'>
