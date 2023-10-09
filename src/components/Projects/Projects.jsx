@@ -29,7 +29,7 @@ const Projects = () => {
                     <div className='col-md-4 project-empty-div'></div>
                     <div className='col-md-8 px-4'>
                         <div className='project-button-div'>
-                            <Link to='/projects' className='project-button'>VIEW OUR PORTFOLIO</Link>
+                            <Link onClick={() => window.scrollTo(0,0)} to='/projects' className='project-button'>VIEW OUR PORTFOLIO</Link>
                         </div>
                     </div>
                 </div>
