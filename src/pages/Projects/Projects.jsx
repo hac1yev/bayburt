@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Projects.css';
-// import more_icon from '../../assets/images/more-icon.svg';
 import { Link } from 'react-router-dom';
 import { allProjects } from '../../assets/dummyApi/project-api';
 import { continuedProjects } from '../../assets/dummyApi/project-api';
@@ -44,7 +43,7 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <Link to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
+                        <Link onClick={() => window.scrollTo(0,0)} to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
@@ -53,7 +52,7 @@ const Projects = () => {
                                 <span>
                                     {item.desc}
                                 </span>
-                                <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
+                                <Link onClick={() => window.scrollTo(0,0)} to={`/projects/${item.id}`} className="project-more-button mt-3">
                                     {/* <img src={more_icon} alt="more" /> */}
                                     Ətraflı
                                 </Link>
@@ -73,7 +72,7 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"
                     >
-                        <Link to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
+                        <Link onClick={() => window.scrollTo(0,0)} to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
@@ -82,7 +81,7 @@ const Projects = () => {
                                 <span>
                                     {item.desc}
                                 </span>
-                                <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
+                                <Link onClick={() => window.scrollTo(0,0)} to={`/projects/${item.id}`} className="project-more-button mt-3">
                                     {/* <img src={more_icon} alt="more" /> */}
                                     Ətraflı
                                 </Link>
@@ -102,7 +101,7 @@ const Projects = () => {
                         data-aos="zoom-in-down"
                         data-aos-duration="500"  
                     >
-                        <Link to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
+                        <Link onClick={() => window.scrollTo(0,0)} to={item.path} className={showId === item.id ? "px-0 project-card project-card-before" : "px-0 project-card"}>
                             <div className='project-img'>
                                 <img src={item.img} alt="project1" />
                             </div>
@@ -111,7 +110,7 @@ const Projects = () => {
                                 <span>
                                     {item.desc}
                                 </span>
-                                <Link to={`/projects/${item.id}`} className="project-more-button mt-3">
+                                <Link onClick={() => window.scrollTo(0,0)} to={`/projects/${item.id}`} className="project-more-button mt-3">
                                     {/* <img src={more_icon} alt="more" /> */}
                                     Ətraflı
                                 </Link>

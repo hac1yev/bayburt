@@ -124,6 +124,11 @@ const Header = () => {
                                         SOSİAL MƏSULİYYƏT
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link onClick={handleCloseMenu} to='/news'>
+                                        Xəbərlər
+                                    </Link>
+                                </li>
                             </ul>
                             <div className='col-lg-4 contact-phone-numbers'>
                                 <span>
