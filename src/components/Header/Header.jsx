@@ -126,7 +126,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link onClick={handleCloseMenu} to='/news'>
-                                        Xəbərlər
+                                        XƏBƏRLƏR
                                     </Link>
                                 </li>
                             </ul>
