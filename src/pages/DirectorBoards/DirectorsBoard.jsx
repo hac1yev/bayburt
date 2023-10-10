@@ -1,25 +1,12 @@
 import React from 'react';
-// import Banner from '../../components/Banner/Banner';
+import Banner from '../../components/Banner/Banner';
 import './DirectorsBoard.css';
-import { useState } from 'react';
 
 const DirectorsBoard = () => {
-    const [isHover,setIsHover] = useState(false);
-    const [cardId,setCardId] = useState(null);
-
-    const handleEnter = (id) => {
-        setIsHover(true);
-        setCardId(id);
-    };
-
-    const handleLeave = () => {
-        setIsHover(false);
-        setCardId(null);
-    };
 
     return (
         <div className='directors-board'>
-            {/* <Banner title={`İdarə Heyəti`} description={`HAQQIMIZDA / İDARƏ HEYƏTİ`} /> */}
+            <Banner title={`İdarə Heyəti`} description={`HAQQIMIZDA / İDARƏ HEYƏTİ`} />
             <div className='container'>
                 <div className="directors-board-composition row">
                     <h2 className='col-12 mt-3'>İDARƏ HEYƏTİNİN TƏRKİBİ</h2>
