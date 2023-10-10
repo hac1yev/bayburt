@@ -77,6 +77,33 @@
     animation: director_duty 0.3s ease;
 }
 
+.directors-board-composition h2 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+
+.directors-board-composition div {
+    margin-top: 30px;
+}
+
+.directors-board-composition div h3 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+
+.directors-board-composition div p {
+    font-size: 17px;
+    line-height: 20px;
+    color: #A8A8A8;
+}
+
 @keyframes director_duty {
     from {bottom: 75px; opacity: 0;}
     to {bottom: 45px; opacity: 1;}
