@@ -3,6 +3,7 @@
     width: 100%;
     height: 350px;
     background-image: url(../../assets/images/banner.svg);
+    background-size: cover;
 }
 
 .banner-container div {
