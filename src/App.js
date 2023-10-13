@@ -27,6 +27,7 @@ import CompanyGroups from './pages/CompanyGroups/CompanyGroups';
 import News from './pages/News/News';
 import NewsDetail from './pages/News/NewsDetail';
 import SosialService from './pages/SosialResponsibility/SosialResponsibility';
+import ManagmentMessage from './pages/ManagmentMessage/ManagmentMessage';
 
 const App = () => {
   const mode = useSelector(state => state.modeReducer.mode);
@@ -40,6 +41,7 @@ const App = () => {
           <Route path='/about/mission' element={<Mission />} />
           <Route path='/about/politics' element={<Siyaset />} />
           <Route path='/about/directors-board' element={<DirectorsBoard />} />
+          <Route path='/about/managment-message' element={<ManagmentMessage />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/highway' element={<HighwayProjects />} />
           <Route path='/projects/railway' element={<RailwayProjects />} />
@@ -58,6 +60,7 @@ const App = () => {
           <Route path='/news' element={<News />} />
           <Route path='/news/:newsId' element={<NewsDetail />} />
           <Route path='/social-responsibility' element={<SosialService />} />
+          
       </Routes>
       <Footer />
     </div>
