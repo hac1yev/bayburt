@@ -82,11 +82,14 @@
     margin-bottom: 8px;
     font-size: 30px;
     text-transform: uppercase;
-    color: #A8A8A8;
+    color: #000;
 }
 
 .directors-board-composition div {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .directors-board-composition div h3 {
@@ -95,7 +98,7 @@
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #A8A8A8;
+    color: #000;
 }
 
 .directors-board-composition div p {
@@ -118,4 +121,25 @@
     .directors-board-card {
         height: 500px;
     }
+
+    .directors-board-composition h2 {
+        font-size: 24px;
+    }
+
+    .directors-board-composition div h3 {
+        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .directors-board-composition div p {
+        font-size: 15px;
+        line-height: 17px;
+        color: #A8A8A8;
+    }
+
+    .directors-board-composition div {
+        margin-top: 20px;
+    }
+    
 }
