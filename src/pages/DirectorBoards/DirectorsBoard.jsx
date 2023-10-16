@@ -15,7 +15,7 @@ const DirectorsBoard = () => {
                         className='col-12 mt-3 text-center'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         İDARƏ HEYƏTİNİN TƏRKİBİ
                     </h2>
@@ -23,7 +23,7 @@ const DirectorsBoard = () => {
                         className='col-lg-6'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         <h3>ABDURRAHMAN ŞENTÜRK</h3>
                         <p>İdarə heyətinin sədri</p>
@@ -32,7 +32,7 @@ const DirectorsBoard = () => {
                         className='col-lg-6'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         <h3>ALİ ŞENTÜRK</h3>
                         <p>İdarə heyətinin rəhbərinin müavini</p>
@@ -41,7 +41,7 @@ const DirectorsBoard = () => {
                         className='col-12 mt-5 text-center'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         İDARƏ HEYƏTİ ÜZVLƏRİ
                     </h2>
@@ -49,7 +49,7 @@ const DirectorsBoard = () => {
                         className='col-lg-4'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         <h3>AHMET ŞENTÜRK</h3>
                         <p>İdarə heyəti üzvü</p>
@@ -58,7 +58,7 @@ const DirectorsBoard = () => {
                         className='col-lg-4'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         <h3>GÜNGÖR ŞENTÜRK</h3>
                         <p>İdarə heyəti üzvü</p>
@@ -67,7 +67,7 @@ const DirectorsBoard = () => {
                         className='col-lg-4'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"    
+                        data-aos-duration="700"    
                     >
                         <h3>ALİM ŞENTÜRK</h3>
                         <p>İdarə heyəti üzvü</p>

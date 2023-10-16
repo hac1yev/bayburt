@@ -9,7 +9,7 @@ const FooterContent = () => {
                 <p
                   data-aos="zoom-in"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="700"
                 >
                 Bayburt Grup, başda tikinti sektoru olmaqla enerji, istehsal və
                 xidmət sektorlarında yanacaq təchizatı, sığorta və broker
@@ -23,7 +23,7 @@ const FooterContent = () => {
                   src={footer1} className="img-fluid" alt=""  
                   data-aos="zoom-in"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="700"
                 />
             </div>
         </div>

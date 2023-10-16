@@ -47,7 +47,7 @@ const ProjectDetail = () => {
                         className='project-detail-title'
                         data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         {findedItem.footerText}
                     </h4>
@@ -60,7 +60,7 @@ const ProjectDetail = () => {
                         className='project-detail-desc'
                         data-aos="zoom-in"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         {findedItem.allDesc}
                     </p>
@@ -78,7 +78,7 @@ const ProjectDetail = () => {
                                 alt="projectDetail2" 
                                 data-aos="zoom-in"
                                 data-aos-easing="linear"
-                                data-aos-duration="500"
+                                data-aos-duration="700"
                             />
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const ProjectDetail = () => {
                                         alt="projectDetail1" 
                                         data-aos="zoom-in"
                                         data-aos-easing="linear"
-                                        data-aos-duration="500"
+                                        data-aos-duration="700"
                                     />
                                 </div>
                             </div>
@@ -102,7 +102,7 @@ const ProjectDetail = () => {
                                         alt="projectDetail1" 
                                         data-aos="zoom-in"
                                         data-aos-easing="linear"
-                                        data-aos-duration="500"
+                                        data-aos-duration="700"
                                     />
                                 </div>
                             </div>

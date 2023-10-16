@@ -15,7 +15,7 @@ const Mission = () => {
                 className="col-lg-3 mission-vision-1"
                 data-aos="zoom-in"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
             >
                 <img src={mission} alt="" />
                 <h1>MİSSİYA</h1>
@@ -25,7 +25,7 @@ const Mission = () => {
                 className="col-lg-3 mission-vision-1"
                 data-aos="zoom-in"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
             >
                 <img src={viziyon} alt="" />
                 <h1>VİZYON</h1>
@@ -35,7 +35,7 @@ const Mission = () => {
                 className="col-lg-3 mission-vision-1"
                 data-aos="zoom-in"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
             >
                 <img src={deyer} alt="" />
                 <h1>DƏYƏRLƏR</h1>

@@ -14,7 +14,7 @@ const History = () => {
                 className='history-content'
                 data-aos="zoom-in"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
               >
                 <p>
                   Öhdəliklərindəki işlərin uğurla tamamlanması və yeni işlərin alınması, zamanla öhdəliklərindəki 

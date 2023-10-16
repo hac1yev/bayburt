@@ -10,7 +10,7 @@ const DirectorMessage = () => {
                 <h1 
                   data-aos="fade-down"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="700"
                 >
                   RƏHBƏRİN MESAJI
                 </h1>
@@ -20,7 +20,7 @@ const DirectorMessage = () => {
                 <p
                   data-aos="zoom-in-down"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="700"
                 >
                   Həyatımızın ilk pəncərəsinin açıldığı "ailə" müəssisəsini ayaqda üstə saxlayan sağlam    
                   prinsiplər, ənənələr, gündəlik davranışlar, müəssisənin uzun müddətli var olmasını təmin 
@@ -31,7 +31,7 @@ const DirectorMessage = () => {
                 <b
                   data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="700"
                 >
                   Abdurrahman Şentürk <br /> İdarə Heyəti Rəhbəri
                 </b>
