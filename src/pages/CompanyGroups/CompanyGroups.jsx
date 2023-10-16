@@ -16,7 +16,8 @@ const CompanyGroups = () => {
         <div className="company-container mx-auto">
           <div className="row mt-5">
             {companyGroupImgs.map((item) => (
-              <div className="col-lg-2 col-md-6 company-col">
+              <div className="col-lg-2 col-md-6 company-col"  data-aos="zoom-in"
+              data-aos-duration="500">
                 <img
                   src={
                     isDark === "dark" ? item.img2.default : item.img1.default

@@ -58,4 +58,21 @@
     .company-col {
         width: 50% !important;
     }
+    .company-col:nth-child(odd) {
+        border-right: 1px solid #151515;
+        border-bottom: 1px solid #151515;
+        border-top: none;
+        border-left: none;
+    }
+    
+    .company-col:nth-child(even) {
+        border-left: none;
+        border-bottom: 1px solid #151515;
+        border-top: none;
+        border-right: none;
+        
+    }
+    .company-col:nth-last-child(-n+2) {
+        border-bottom: none !important;
+    }
 }
