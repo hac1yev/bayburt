@@ -13,7 +13,14 @@ const News = () => {
                     {newsApi.map(item => (
                         <div class="column">
                             {item.map(imgItem => (
-                                <Link onClick={() => window.scrollTo(0, 0)} to={`/news/${imgItem.id}`} class="news-card">
+                                <Link 
+                                    onClick={() => window.scrollTo(0, 0)} 
+                                    to={`/news/${imgItem.id}`} 
+                                    class="news-card"
+                                    data-aos="zoom-in"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="500"
+                                >
                                     <div className='news-card-img'>
                                         {imgItem.img?.default && <img src={imgItem.img?.default} alt={imgItem.date} />}
                                     </div>

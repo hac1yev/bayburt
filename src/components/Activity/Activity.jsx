@@ -57,7 +57,13 @@ const Activity = () => {
 
     return (
         <div className="projects-container container">
-                <h1>Fəaliyyət Sahələri</h1>
+                <h1
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                >
+                    Fəaliyyət Sahələri
+                </h1>
 
                 <div className="all-projects">
                     <ul>
@@ -72,6 +78,9 @@ const Activity = () => {
                                 <Link  
                                     to={item.path} 
                                     onClick={() => window.scrollTo(0,0)}
+                                    data-aos="zoom-in"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="500"
                                 >
                                     {item.link}
                                 </Link>

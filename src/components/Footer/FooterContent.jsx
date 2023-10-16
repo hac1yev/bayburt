@@ -6,7 +6,11 @@ const FooterContent = () => {
     <div className="container">
         <div className="footer-div-1-inner row">
             <div className="col-md-12 col-lg-5 px-0 d-flex align-items-center justify-content-center">
-                <p>
+                <p
+                  data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
                 Bayburt Grup, başda tikinti sektoru olmaqla enerji, istehsal və
                 xidmət sektorlarında yanacaq təchizatı, sığorta və broker
                 xidmətləri, istixana becərilməsi, bərpa olunan enerji istehsalı,
@@ -15,7 +19,12 @@ const FooterContent = () => {
                 </p>
             </div>
             <div className="col-md-12 col-lg-7 px-0 footer-div-1-inner-img">
-                <img src={footer1} className="img-fluid" alt=""  />
+                <img 
+                  src={footer1} className="img-fluid" alt=""  
+                  data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                />
             </div>
         </div>
     </div>

@@ -11,17 +11,32 @@ const Mission = () => {
     <Banner title={'MİSYON VƏ VİZYON'} description={'HAQQIMIZDA / MİSYON VƏ VİZYON'} />
     <div className='container-md'>
         <div className="row mission-vision">
-            <div className="col-lg-3 mission-vision-1">
+            <div 
+                className="col-lg-3 mission-vision-1"
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+            >
                 <img src={mission} alt="" />
                 <h1>MİSSİYA</h1>
                 <p>Bütün fəaliyyət sahələrində; yenilikçi, keyfiyyətli, etibarlı xidmət ve həllər təqdim etmək, qlobal hədəflərinə marka tanınırlığını artdıraraq və xalqına qürur verərək çatmaq.</p>
             </div>
-            <div className="col-lg-3 mission-vision-1">
+            <div 
+                className="col-lg-3 mission-vision-1"
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+            >
                 <img src={viziyon} alt="" />
                 <h1>VİZYON</h1>
                 <p>Qlobal bazarda davamlı böyüməsini qoruyan, rəqabət gücü ilə seçilən, strateji tərəfdaş kimi etibar edilən, ətraf mühitə və insanlara həssas olan dünyanın aparıcı unikal şirkətlərindən biri olmaq.</p>
             </div>
-            <div className="col-lg-3 mission-vision-1">
+            <div 
+                className="col-lg-3 mission-vision-1"
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+            >
                 <img src={deyer} alt="" />
                 <h1>DƏYƏRLƏR</h1>
                 <p>Sevgi və Hörmət Şeffaflık və Dürüstlük Keyfiyyət Etibarlılıq Yenilikçilik və Orjinallıq Əxlaq və Məsuliyyət Davamlılıq</p>
