@@ -101,7 +101,7 @@ const Header = () => {
                                             <Link onClick={handleCloseMenu} to="/about/mission">MİSSİYA VƏ VİZYON</Link>
                                             <Link onClick={handleCloseMenu} to="/about/politics">ŞİRKƏT SİYASƏTİMİZ</Link>
                                             <Link onClick={handleCloseMenu} to="/about/directors-board">İDARƏ HEYƏTİ</Link>
-                                            <Link onClick={handleCloseMenu} to="/">RƏHBƏRİN MESAJI</Link>
+                                            <Link onClick={handleCloseMenu} to="/about/managment-message">RƏHBƏRİN MESAJI</Link>
                                             <Link onClick={handleCloseMenu} to="/about/companyGroups">QRUP ŞİRKƏTLƏRİ</Link>
                                             <Link onClick={handleCloseMenu} to="/about/awards">MÜKAFAT VƏ UĞURLAR</Link>
                                             <Link onClick={handleCloseMenu} to="/about/certificat">ÜZVLÜK VƏ SERTİFİKATLAR</Link>
