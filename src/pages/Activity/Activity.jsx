@@ -11,7 +11,12 @@ const Activity = () => {
             <div className="container my-5">
                 <div className="row">
                     {activityData.map((item) => (
-                        <div className="col-lg-4 col-md-6 activity-col">
+                        <div 
+                            className="col-lg-4 col-md-6 activity-col"
+                            data-aos="zoom-in"
+                            data-aos-easing="linear"
+                            data-aos-duration="500"
+                        >
                             <Link onClick={() => window.scrollTo(0,0)} to="/construction" className='activity-card'>
                                 <div className='activity-img'>
                                     <img src={item.img} alt={item.title} />

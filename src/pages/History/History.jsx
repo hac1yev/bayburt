@@ -10,7 +10,12 @@ const History = () => {
         <div className='container'>
           <div className="row history-row">
             <div className="col-lg-7">
-              <div className='history-content'>
+              <div 
+                className='history-content'
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+              >
                 <p>
                   Öhdəliklərindəki işlərin uğurla tamamlanması və yeni işlərin alınması, zamanla öhdəliklərindəki 
                   işlərin böyüməsinə və 30.03.1987-ci il tarixində “Bayburt İnşaat Nak. San. ve Tic. Ltd. Şti.” 

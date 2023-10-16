@@ -15,11 +15,23 @@ const Projects = () => {
                             </svg>
                             <span>BUILDING GREATNESS</span>
                         </div>
-                        <h2 className='col-md-4 d-flex justify-content-center'>LAYİHƏLƏR</h2>
+                        <h2 
+                            className='col-md-4 d-flex justify-content-center'
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="500"
+                        >
+                            LAYİHƏLƏR
+                        </h2>
                         <div className='col-md-4'></div>
                     </div>
                 </div>
-                <p className='projects-content col-md-12'>
+                <p 
+                    className='projects-content col-md-12'
+                    data-aos="zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                >
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                     Our companies are proving that you can build a world-class technology company anywhere. 
                     We believe the best advantages are the ones you already have. Build where your talent is. 

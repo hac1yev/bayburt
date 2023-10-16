@@ -43,31 +43,67 @@ const ProjectDetail = () => {
         <>
             <div className='container my-3'>
                 <div className="row">
-                    <h4 className='project-detail-title'>{findedItem.footerText}</h4>
+                    <h4 
+                        className='project-detail-title'
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        {findedItem.footerText}
+                    </h4>
                 </div>
                 <div className='row projectdetailrow'>
                     <div className='my-3'>
                         <div className="col-12 project-detail-row"></div>
                     </div>
-                    <p className='project-detail-desc'>{findedItem.allDesc}</p>
+                    <p 
+                        className='project-detail-desc'
+                        data-aos="zoom-in"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        {findedItem.allDesc}
+                    </p>
                     <div className='col-lg-6'>
                         <div className='project-detail-left'>
                             <div className='pr-fullscreen' onClick={handleOpenSlider}>
-                                <img src={fullscreen} alt="fullscreen" />
+                                <img 
+                                    src={fullscreen} 
+                                    alt="fullscreen" 
+                                />
                             </div>
-                            <img className="pr-detail-left-img" src={projectDetail2} alt="projectDetail2" />
+                            <img 
+                                className="pr-detail-left-img" 
+                                src={projectDetail2} 
+                                alt="projectDetail2" 
+                                data-aos="zoom-in"
+                                data-aos-easing="linear"
+                                data-aos-duration="500"
+                            />
                         </div>
                     </div>
                     <div className='col-lg-6 d-flex align-items-center justify-content-center'>
                         <div className="row project-detail-right w-100">
                             <div className="col-lg-12 px-0">
                                 <div className='project-detail-img1'>
-                                    <img src={projectDetail1} alt="projectDetail1" />
+                                    <img
+                                        src={projectDetail1} 
+                                        alt="projectDetail1" 
+                                        data-aos="zoom-in"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="500"
+                                    />
                                 </div>
                             </div>
                             <div className="col-lg-12 px-0">
                                 <div className='project-detail-img2'>
-                                    <img src={projectDetail1} alt="projectDetail1" />
+                                    <img 
+                                        src={projectDetail1} 
+                                        alt="projectDetail1" 
+                                        data-aos="zoom-in"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="500"
+                                    />
                                 </div>
                             </div>
                         </div>
