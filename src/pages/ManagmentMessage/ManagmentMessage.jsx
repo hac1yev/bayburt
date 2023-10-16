@@ -10,20 +10,27 @@ const ManagmentMessage = () => {
         description={"HAQQIMIZDA/ RƏHBƏRİN MESAJI"}
       />
       <div className="container">
-        <div className="message-container">
-          <div>
-            <img src={image} alt="" />
+        <div className="managmentmessage">
+          <div className="message-container">
+            <div className="img-container">
+              <img src={image} alt="" />
+              <div className="gradient-overlay"></div>
+            </div>
+            <div
+              className="message-text"
+              data-aos="zoom-in-down"
+              data-aos-duration="700"
+            >
+              Bayburt Qrup, fəaliyyət göstərdiyi müxtəlif sahələrdə qlobal
+              uğurlar əldə edərək hər zaman ölkəsini qürurlandırmağa çalışacaq
+              və keyfiyyəti ilə fərqlənməyə və davamlı inkişaf yanaşması ilə
+              gələcəyi inşa etməyə davam edəcəkdir.
+            </div>
           </div>
-          <div>
-            Bayburt Qrup, fəaliyyət göstərdiyi müxtəlif sahələrdə qlobal uğurlar
-            əldə edərək hər zaman ölkəsini qürurlandırmağa çalışacaq və
-            keyfiyyəti ilə fərqlənməyə və davamlı inkişaf yanaşması ilə gələcəyi
-            inşa etməyə davam edəcəkdir.
+          <div className="message" data-aos="fade-down" data-aos-duration="700">
+            <p className="managment">Abdurrahman Şentürk</p>
+            <p>Yön. Kurulu Başkanı</p>
           </div>
-        </div>
-        <div className="message">
-          <p className="managment">Abdurrahman Şentürk</p>
-          <p>Yön. Kurulu Başkanı</p>
         </div>
       </div>
     </div>
