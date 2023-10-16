@@ -19,7 +19,7 @@ const News = () => {
                                     class="news-card"
                                     data-aos="zoom-in"
                                     data-aos-easing="linear"
-                                    data-aos-duration="500"
+                                    data-aos-duration="700"
                                 >
                                     <div className='news-card-img'>
                                         {imgItem.img?.default && <img src={imgItem.img?.default} alt={imgItem.date} />}

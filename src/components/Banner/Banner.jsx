@@ -8,7 +8,7 @@ const Banner = ({ title, description }) => {
             <div
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
             >
                 <h1>{title}</h1>
                 <p>{description}</p>

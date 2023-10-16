@@ -15,7 +15,7 @@ const Activity = () => {
                             className="col-lg-4 col-md-6 activity-col"
                             data-aos="zoom-in"
                             data-aos-easing="linear"
-                            data-aos-duration="500"
+                            data-aos-duration="700"
                         >
                             <Link onClick={() => window.scrollTo(0,0)} to="/construction" className='activity-card'>
                                 <div className='activity-img'>

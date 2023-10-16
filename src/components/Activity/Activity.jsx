@@ -60,7 +60,7 @@ const Activity = () => {
                 <h1
                     data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="500"
+                    data-aos-duration="700"
                 >
                     Fəaliyyət Sahələri
                 </h1>
@@ -80,7 +80,7 @@ const Activity = () => {
                                     onClick={() => window.scrollTo(0,0)}
                                     data-aos="zoom-in"
                                     data-aos-easing="linear"
-                                    data-aos-duration="500"
+                                    data-aos-duration="700"
                                 >
                                     {item.link}
                                 </Link>

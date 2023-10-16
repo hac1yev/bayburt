@@ -10,7 +10,7 @@ const History = () => {
                 <h1
                     data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="500"
+                    data-aos-duration="700"
                 >
                     TARİHÇE
                 </h1>
@@ -20,7 +20,7 @@ const History = () => {
                 <p
                     data-aos="zoom-in"
                     data-aos-easing="linear"
-                    data-aos-duration="500"
+                    data-aos-duration="700"
                 >
                     Kurucumuz rahmetli Kıyasi Şentürk, 1973 yılında kardeşleri ile birlikte ‘Kıyasi Şentürk ve 
                     Ortakları’ unvanı ile alt yapı, taahhüt ve inşaat işlerine başlamışlardır. Üstlendikleri 
@@ -35,7 +35,7 @@ const History = () => {
                     className='col-lg-4 under-history'
                     data-aos="zoom-in"
                     data-aos-easing="linear"
-                    data-aos-duration="500"
+                    data-aos-duration="700"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                     <rect x="0.5" y="1" width="17" height="17" stroke="#2721F2"/>
@@ -46,7 +46,7 @@ const History = () => {
                     <p
                         data-aos="zoom-in"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         We’re relentless because we have to be. Entrepreneurs choose to partner with Drive because 
                         they want convicted investors who will push them to be great.
@@ -56,7 +56,7 @@ const History = () => {
                     <p
                         data-aos="zoom-in"
                         data-aos-easing="linear"
-                        data-aos-duration="500"
+                        data-aos-duration="700"
                     >
                         Great founders don’t want cheerleaders or cheap platitudes. They want honesty about what 
                         works and what doesn’t. They want the best tools available for doing their life’s work.

@@ -15,12 +15,12 @@ const Founder = () => {
                 className='img-fluid' 
                 data-aos="zoom-in"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
               />
               <p
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="500"
+                data-aos-duration="700"
               >
                 KIYASİ ŞENTÜRK
               </p>
@@ -29,7 +29,7 @@ const Founder = () => {
               className='founder-text'
               data-aos="zoom-in"
               data-aos-easing="linear"
-              data-aos-duration="500"
+              data-aos-duration="700"
             >
               Bir çox Bayburtlunun ortaq taleyi olan qürbət həyatı ilə bu illərdə tanış oldu. Türkiyənin bir çox 
               yerində müxtəlif inşaat işlərində şagird, usta və səyahətçi kimi çalışdı. 1970-ci ildə daha uzaqlara, 
