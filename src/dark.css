@@ -74,6 +74,10 @@
     color: #fff;
 }
 
+.dark .message p {
+    color: #fff;
+}
+
 .dark .input-p {
     color: #fff;
 }

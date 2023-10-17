@@ -14,7 +14,9 @@ const DirectorMessage = () => {
                 >
                   RƏHBƏRİN MESAJI
                 </h1>
-                <Link onClick={() => window.scrollTo(0,0)} to="/" className='mybtn text-center'>VIEW OUR STORY</Link>
+                <Link onClick={() => window.scrollTo(0,0)} to="/about/managment-message" className='mybtn text-center'>
+                  VIEW OUR STORY
+                </Link>
             </div>
             <div className="leader-message-inner col-lg-8">
                 <p
