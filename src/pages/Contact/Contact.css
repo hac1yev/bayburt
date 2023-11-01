@@ -14,6 +14,10 @@
   width: 100%;
 }
 
+.form-inner input {
+  width: 100%;
+}
+
 .form-inner label {
   color: #0a0a0b;
   font-family: "Inter";
