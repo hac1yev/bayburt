@@ -64,7 +64,7 @@ const FirstSlider = () => {
         </Slider>
       </div>
       <div className="middle-video col-lg-4">
-        <video autoPlay muted loop controls > 
+        <video autoPlay muted loop > 
           <source src="/1.mp4" type="video/mp4" />
         </video>
       </div>
