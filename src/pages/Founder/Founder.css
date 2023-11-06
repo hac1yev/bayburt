@@ -27,7 +27,7 @@
   text-align: center;
   bottom: -15px;
   left: 50%;
-  transform: translate(-50%, -15px);
+  transform: translate(-50%, -15px)!important;
   transition: all 0.5s ease-in-out;
   border-width: 1px;
   border-style: solid;
