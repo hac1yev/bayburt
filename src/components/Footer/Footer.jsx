@@ -89,7 +89,9 @@ const Footer = () => {
             </div>
             <div className="comp-name-footer">
               <span>Bütün Hüquqlar Qorunur.</span>
-              <img src={butaLogo} alt="" />
+              <a href="https://www.butagrup.com.tr/" target="_blank" rel="noreferrer">
+                <img src={butaLogo} alt="buta-logo" />
+              </a>
             </div>
             <div className="copyright-footer">
               <svg
